@@ -1,0 +1,48 @@
+---
+layout: base.njk
+pageTitle: "About"
+pageDescription: "Why Sportswear X-Change exists — removing cost as a barrier to sport, reducing waste, and strengthening community in North Kerry."
+navActive: about
+permalink: /about/
+---
+
+<section>
+  <div class="page-hero">
+    <h1>About Sportswear X-Change</h1>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">Our story</div>
+  {% for para in about.story %}
+  <p>{{ para }}</p>
+  {% endfor %}
+</section>
+
+<section>
+  <div class="section-label">Why this matters</div>
+  <div class="cards">
+    {% for card in about.cards %}
+    <div class="card">
+      <div class="card-icon">{{ card.icon }}</div>
+      <h3>{{ card.title }}</h3>
+      <p>{{ card.text }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section>
+  <div class="section-label">Circular economy &amp; SDG 12</div>
+  {% for para in about.sdg_text %}
+  <p>{{ para }}</p>
+  {% endfor %}
+</section>
+
+<section>
+  <div class="section-label">About NKEF</div>
+  {% for para in about.nkef_text %}
+  <p>{{ para }}</p>
+  {% endfor %}
+  <a class="btn btn-outline" href="{{ site.facebook_url }}" target="_blank" rel="noopener" style="max-width:240px;">Visit NKEF on Facebook →</a>
+</section>

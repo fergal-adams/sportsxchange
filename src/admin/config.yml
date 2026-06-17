@@ -1,0 +1,117 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "src/assets/images"
+public_folder: "/assets/images"
+
+collections:
+
+  - name: "settings"
+    label: "Site settings"
+    files:
+      - name: "site"
+        label: "Global settings"
+        file: "src/_data/site.yml"
+        fields:
+          - { label: "Site name", name: "name", widget: "string" }
+          - { label: "WhatsApp group URL", name: "whatsapp_url", widget: "string" }
+          - { label: "Email address", name: "email", widget: "string" }
+          - { label: "Phone number", name: "phone", widget: "string" }
+          - { label: "Facebook URL", name: "facebook_url", widget: "string" }
+          - { label: "Instagram URL", name: "instagram_url", widget: "string" }
+          - label: "Partners & supporters"
+            name: "partners"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+
+  - name: "pages"
+    label: "Pages"
+    files:
+
+      - name: "home"
+        label: "Home"
+        file: "src/_data/home.yml"
+        fields:
+          - { label: "Hero pill text", name: "hero_pill", widget: "string" }
+          - { label: "Hero heading", name: "hero_heading", widget: "string" }
+          - { label: "Hero subheading", name: "hero_subheading", widget: "string" }
+          - { label: "Hero button label", name: "hero_cta", widget: "string" }
+          - { label: "QR code label", name: "hero_qr_label", widget: "string" }
+          - { label: "Intro heading", name: "intro_heading", widget: "string" }
+          - { label: "Intro text", name: "intro_text", widget: "text" }
+          - { label: "Who is this for — heading", name: "who_heading", widget: "string" }
+          - { label: "Who is this for — text", name: "who_text", widget: "text" }
+          - label: "Steps"
+            name: "steps"
+            widget: "list"
+            fields:
+              - { label: "Number", name: "num", widget: "number" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
+
+      - name: "how_it_works"
+        label: "How it works"
+        file: "src/_data/how_it_works.yml"
+        fields:
+          - label: "Steps"
+            name: "steps"
+            widget: "list"
+            fields:
+              - { label: "Number", name: "num", widget: "number" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+          - label: "Collection points"
+            name: "collection_points"
+            widget: "list"
+            field: { label: "Location", name: "location", widget: "string" }
+          - { label: "Collection points note", name: "collection_points_note", widget: "string" }
+          - label: "What can be swapped"
+            name: "what_can"
+            widget: "list"
+            field: { label: "Item", name: "item", widget: "string" }
+          - label: "What can't be swapped"
+            name: "what_cannot"
+            widget: "list"
+            field: { label: "Item", name: "item", widget: "string" }
+          - { label: "Community rules", name: "community_rules", widget: "text" }
+          - label: "FAQs"
+            name: "faqs"
+            widget: "list"
+            fields:
+              - { label: "Question", name: "q", widget: "string" }
+              - { label: "Answer", name: "a", widget: "text" }
+
+      - name: "about"
+        label: "About"
+        file: "src/_data/about.yml"
+        fields:
+          - label: "Our story (paragraphs)"
+            name: "story"
+            widget: "list"
+            field: { label: "Paragraph", name: "para", widget: "text" }
+          - label: "Why this matters cards"
+            name: "cards"
+            widget: "list"
+            fields:
+              - { label: "Emoji icon", name: "icon", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+          - label: "SDG section (paragraphs)"
+            name: "sdg_text"
+            widget: "list"
+            field: { label: "Paragraph", name: "para", widget: "text" }
+          - label: "NKEF section (paragraphs)"
+            name: "nkef_text"
+            widget: "list"
+            field: { label: "Paragraph", name: "para", widget: "text" }
+
+      - name: "get_involved"
+        label: "Get involved"
+        file: "src/_data/get_involved.yml"
+        fields:
+          - { label: "Families intro text", name: "families_intro", widget: "text" }
+          - { label: "Sports clubs text", name: "clubs_text", widget: "text" }
+          - { label: "Businesses text", name: "businesses_text", widget: "text" }
+          - { label: "Contact note", name: "contact_note", widget: "text" }

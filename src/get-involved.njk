@@ -1,0 +1,68 @@
+---
+layout: base.njk
+pageTitle: "Get involved"
+pageDescription: "Get involved with Sportswear X-Change. For families, sports clubs, and businesses in North Kerry."
+navActive: involved
+permalink: /get-involved/
+---
+
+<section>
+  <div class="page-hero">
+    <h1>Get involved</h1>
+  </div>
+</section>
+
+<section id="families">
+  <div class="section-label">For families</div>
+  <div class="qr-row">
+    <div style="flex:1">
+      <a class="btn btn-primary" href="{{ site.whatsapp_url }}" target="_blank" rel="noopener">Join the WhatsApp group</a>
+      <p style="font-size:0.85rem;margin-top:10px;color:var(--text-muted);">{{ get_involved.families_intro }}</p>
+    </div>
+    <div class="qr-box">QR<br>code</div>
+  </div>
+  <a class="btn btn-outline" href="#">Download our flyer</a>
+</section>
+
+<section id="clubs">
+  <div class="section-label">For sports clubs</div>
+  <p>{{ get_involved.clubs_text }}</p>
+  <div class="callout">
+    <div class="callout-title">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+      Get in touch
+    </div>
+    <p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+  </div>
+</section>
+
+<section id="businesses">
+  <div class="section-label">For businesses</div>
+  <p>{{ get_involved.businesses_text }}</p>
+  <div class="callout">
+    <div class="callout-title">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+      Get in touch
+    </div>
+    <p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">Partners &amp; supporters</div>
+  <div class="trust">
+    {% for partner in site.partners %}
+    <span class="trust-logo">{{ partner.name }}</span>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-label">Contact</div>
+  <p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+  <p>Phone: <a href="tel:{{ site.phone }}">{{ site.phone }}</a></p>
+  <p>WhatsApp: <a href="{{ site.whatsapp_url }}" target="_blank" rel="noopener">Join the group</a></p>
+  <div class="divider"></div>
+  <p>{{ get_involved.contact_note }}</p>
+  <a class="btn btn-outline" href="{{ site.facebook_url }}" target="_blank" rel="noopener" style="max-width:200px;margin-top:4px;">NKEF on Facebook →</a>
+</section>

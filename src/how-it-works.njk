@@ -1,0 +1,88 @@
+---
+layout: base.njk
+pageTitle: "How it works"
+pageDescription: "How to join, post items, browse, and collect through Sportswear X-Change — North Kerry's free community sportswear swap."
+navActive: how
+permalink: /how-it-works/
+---
+
+<section>
+  <div class="page-hero">
+    <h1>How Sportswear X-Change works</h1>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">The process</div>
+  {% for step in how_it_works.steps %}
+  <div class="process-step">
+    <div class="process-num">{{ step.num }}</div>
+    <div class="process-content">
+      <h3>{{ step.title }}</h3>
+      <p>{{ step.description }}</p>
+    </div>
+  </div>
+  {% endfor %}
+  <a class="btn btn-primary" href="{{ site.whatsapp_url }}" target="_blank" rel="noopener">Join the WhatsApp group</a>
+</section>
+
+<section>
+  <div class="section-label">Collection points</div>
+  <div class="callout">
+    <div class="callout-title">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Where to drop off and collect
+    </div>
+    {% for point in how_it_works.collection_points %}
+    <p>{{ point }}</p>
+    {% endfor %}
+    <div class="divider"></div>
+    <p style="font-size:0.875rem;">{{ how_it_works.collection_points_note }} <a href="/get-involved/#businesses">Get in touch</a>.</p>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">Rules &amp; guidance</div>
+
+  <div class="rules-block">
+    <h3>What can be swapped</h3>
+    <ul>
+      {% for item in how_it_works.what_can %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="rules-block">
+    <h3>What can't be swapped</h3>
+    <ul>
+      {% for item in how_it_works.what_cannot %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="rules-block">
+    <h3>Community expectations</h3>
+    <p style="margin:0;">{{ how_it_works.community_rules }}</p>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">FAQs</div>
+  {% for faq in how_it_works.faqs %}
+  <div class="faq-item">
+    <div class="faq-q">{{ faq.q }}</div>
+    <div class="faq-a">{{ faq.a }}</div>
+  </div>
+  {% endfor %}
+</section>
+
+<section>
+  <div class="section-label">Supported by</div>
+  <div class="trust">
+    {% for partner in site.partners %}
+    <span class="trust-logo">{{ partner.name }}</span>
+    {% endfor %}
+  </div>
+</section>

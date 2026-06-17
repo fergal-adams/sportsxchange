@@ -1,0 +1,38 @@
+steps:
+  - num: 1
+    title: Joining the group
+    description: "Search for Sportswear X-Change North Kerry on WhatsApp and request to join. We'll add you to the community group."
+  - num: 2
+    title: Posting items
+    description: 'Take a photo of the item. Tell us: what sport, size, condition, and any details (e.g., "Size 5 football boots, excellent condition"). Post it in the group.'
+  - num: 3
+    title: Browsing & claiming
+    description: "See something your child needs? Reply to the post and arrange collection. It's that simple."
+
+collection_points:
+  - SuperValu Ballybunion
+  - Ballybunion Community Centre
+collection_points_note: "Want to become a drop-off point?"
+
+what_can:
+  - Sportswear in good condition
+  - Sports equipment (boots, hurls, bats, etc.)
+  - Kits and uniforms
+  - Trainers, shin guards, and protective gear
+
+what_cannot:
+  - Damaged or worn-out items
+  - Non-sports clothing
+  - Items with missing pieces
+
+community_rules: "Be respectful and reliable. Arrange collection within 48 hours. Treat items with care. Give accurate descriptions of condition."
+
+faqs:
+  - q: What if the size isn't right?
+    a: We suggest arranging to swap it for something else from the group, or returning it to the original donor.
+  - q: Can I join if I have nothing to give yet?
+    a: "Yes! Take what you need. When your child outgrows items, contribute back."
+  - q: How long are items available?
+    a: Items stay listed until someone claims them. If unclaimed after a month, the donor can remove them.
+  - q: Who manages this?
+    a: Sportswear X-Change is run by North Kerry Environmental Forum with support from the community.

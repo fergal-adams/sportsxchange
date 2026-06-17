@@ -1,0 +1,70 @@
+---
+layout: base.njk
+pageTitle: "Free sportswear for North Kerry families"
+pageDescription: "Sportswear X-Change is a free community swap for North Kerry families. Donate outgrown sports kit, find what your child needs."
+navActive: home
+---
+
+<section>
+  <div class="hero-wrap">
+    <div class="hero">
+      <div class="hero-pill">{{ home.hero_pill }}</div>
+      <h1>{{ home.hero_heading }}</h1>
+      <p>{{ home.hero_subheading }}</p>
+    </div>
+  </div>
+  <div class="qr-row">
+    <div style="flex:1">
+      <a class="btn btn-primary" href="{{ site.whatsapp_url }}" target="_blank" rel="noopener">{{ home.hero_cta }}</a>
+      <p style="font-size:0.85rem;margin-top:10px;color:var(--text-muted);">{{ home.hero_qr_label }}</p>
+    </div>
+    <div class="qr-box">QR<br>code</div>
+  </div>
+</section>
+
+<section>
+  <div class="stats">
+    <div class="stat"><div class="stat-val">Free</div><div class="stat-label">Always free to use</div></div>
+    <div class="stat"><div class="stat-val">∞</div><div class="stat-label">Items in circulation</div></div>
+    <div class="stat"><div class="stat-val">0</div><div class="stat-label">Items to landfill</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">{{ home.intro_heading }}</div>
+  <p>{{ home.intro_text }}</p>
+</section>
+
+<section>
+  <div class="section-label">How it works</div>
+  <div class="steps">
+    {% for step in home.steps %}
+    <div class="step">
+      <div class="step-num">{{ step.num }}</div>
+      <h3>{{ step.title }}</h3>
+      <p>{{ step.description }}</p>
+    </div>
+    {% endfor %}
+  </div>
+  <a class="btn btn-outline" href="/how-it-works/">Find out more about how it works →</a>
+</section>
+
+<section>
+  <div class="section-label">{{ home.who_heading }}</div>
+  <p>{{ home.who_text }}</p>
+  <a class="btn btn-outline" href="/about/">Read more about us →</a>
+</section>
+
+<section>
+  <div class="section-label">Supported by</div>
+  <div class="trust">
+    {% for partner in site.partners %}
+    <span class="trust-logo">{{ partner.name }}</span>
+    {% endfor %}
+  </div>
+</section>
+
+<section>
+  <a class="btn btn-primary" href="{{ site.whatsapp_url }}" target="_blank" rel="noopener">Join the WhatsApp group</a>
+  <a class="btn btn-outline" href="/get-involved/" style="margin-top:10px;">Get involved →</a>
+</section>
