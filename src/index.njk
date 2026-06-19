@@ -3,68 +3,97 @@ layout: base.njk
 pageTitle: "Free sportswear for North Kerry families"
 pageDescription: "Sportswear X-Change is a free community swap for North Kerry families. Donate outgrown sports kit, find what your child needs."
 navActive: home
+navBg: yellow
 ---
 
-<section>
-  <div class="hero-wrap">
-    <div class="hero">
-      <div class="hero-pill">{{ home.hero_pill }}</div>
+<!-- Hero -->
+<div class="hero-section">
+  <div class="hero-inner">
+    <div class="hero-text">
       <h1>{{ home.hero_heading }}</h1>
       <p>{{ home.hero_subheading }}</p>
     </div>
+    <div class="hero-image"></div>
   </div>
-  <div class="qr-row">
-    <div style="flex:1">
-      <a class="btn btn-primary" href="{{ site.whatsapp_url }}" target="_blank" rel="noopener">{{ home.hero_cta }}</a>
-      <p style="font-size:0.85rem;margin-top:10px;color:var(--text-muted);">{{ home.hero_qr_label }}</p>
+</div>
+
+<!-- What is this -->
+<div class="section-green">
+  <div class="section-inner">
+    <div class="row">
+      <span class="t-label" style="color:var(--yellow);">{{ home.intro_heading }}</span>
+      <div class="row-content">
+        <p class="t-body" style="color:var(--yellow);">{{ home.intro_text }}</p>
+      </div>
     </div>
-    <div class="qr-box">QR<br>code</div>
   </div>
-</section>
+</div>
 
-<section>
-  <div class="stats">
-    <div class="stat"><div class="stat-val">Free</div><div class="stat-label">Always free to use</div></div>
-    <div class="stat"><div class="stat-val">∞</div><div class="stat-label">Items in circulation</div></div>
-    <div class="stat"><div class="stat-val">0</div><div class="stat-label">Items to landfill</div></div>
-  </div>
-</section>
-
-<section>
-  <div class="section-label">{{ home.intro_heading }}</div>
-  <p>{{ home.intro_text }}</p>
-</section>
-
-<section>
-  <div class="section-label">How it works</div>
-  <div class="steps">
+<!-- How does it work -->
+<div class="section-yellow">
+  <div class="section-inner">
+    <div class="row">
+      <span class="t-label" style="color:var(--green);">How does it work?</span>
+      <div class="row-content"></div>
+    </div>
     {% for step in home.steps %}
-    <div class="step">
-      <div class="step-num">{{ step.num }}</div>
-      <h3>{{ step.title }}</h3>
-      <p>{{ step.description }}</p>
+    <div class="step-row">
+      <span class="step-num" style="color:var(--green);">{{ step.num }}</span>
+      <div class="step-content">
+        <h3 style="color:var(--green);">{{ step.title }}</h3>
+        <p style="color:var(--green);">{{ step.description }}</p>
+      </div>
     </div>
     {% endfor %}
+    <div class="row">
+      <span class="t-label"></span>
+      <div class="row-content">
+        <a class="btn btn-green" href="/how-it-works/">Find out more</a>
+      </div>
+    </div>
   </div>
-  <a class="btn btn-outline" href="/how-it-works/">Find out more about how it works →</a>
-</section>
+</div>
 
-<section>
-  <div class="section-label">{{ home.who_heading }}</div>
-  <p>{{ home.who_text }}</p>
-  <a class="btn btn-outline" href="/about/">Read more about us →</a>
-</section>
-
-<section>
-  <div class="section-label">Supported by</div>
-  <div class="trust">
-    {% for partner in site.partners %}
-    <span class="trust-logo">{{ partner.name }}</span>
-    {% endfor %}
+<!-- Who is this for -->
+<div class="section-green">
+  <div class="section-inner">
+    <div class="row">
+      <span class="t-label" style="color:var(--yellow-mid);">{{ home.who_heading }}</span>
+      <div class="row-content">
+        <p class="t-body" style="color:var(--yellow-mid);">{{ home.who_text }}</p>
+        <div><a class="btn btn-yellow" href="/about/">Read more about us</a></div>
+      </div>
+    </div>
   </div>
-</section>
+</div>
 
-<section>
-  <a class="btn btn-primary" href="{{ site.whatsapp_url }}" target="_blank" rel="noopener">Join the WhatsApp group</a>
-  <a class="btn btn-outline" href="/get-involved/" style="margin-top:10px;">Get involved →</a>
-</section>
+<!-- Drop-off locations -->
+<div class="section-yellow">
+  <div class="section-inner">
+    <div class="row">
+      <span class="t-label" style="color:var(--green);">Dropoff locations</span>
+      <div class="row-content locations">
+        {% for point in how_it_works.collection_points %}
+        <p class="t-body location-item" style="color:var(--green);">{{ point }}</p>
+        {% endfor %}
+        <p class="t-body location-note" style="color:var(--green);">{{ how_it_works.collection_points_note }} <a href="/get-involved/#businesses" style="text-decoration:underline;">Get in touch</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Supported by -->
+<div class="section-green">
+  <div class="section-inner">
+    <div class="row">
+      <span class="t-label" style="color:var(--yellow-mid);">Supported by</span>
+      <div class="row-content">
+        <div class="partners">
+          {% for partner in site.partners %}
+          <div class="partner-logo">{{ partner.name }}</div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

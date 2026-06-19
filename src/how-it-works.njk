@@ -1,88 +1,87 @@
 ---
 layout: base.njk
 pageTitle: "How it works"
-pageDescription: "How to join, post items, browse, and collect through Sportswear X-Change — North Kerry's free community sportswear swap."
+pageDescription: "How to join, post items, browse, and collect through Sportswear X-Change."
 navActive: how
+navBg: green
 permalink: /how-it-works/
 ---
 
-<section>
-  <div class="page-hero">
-    <h1>How Sportswear X-Change works</h1>
+<!-- Page hero -->
+<div class="page-hero section-green">
+  <div class="page-hero-inner">
+    <h1>How Sports X-Change Works</h1>
   </div>
-</section>
+</div>
 
-<section>
-  <div class="section-label">The process</div>
-  {% for step in how_it_works.steps %}
-  <div class="process-step">
-    <div class="process-num">{{ step.num }}</div>
-    <div class="process-content">
-      <h3>{{ step.title }}</h3>
-      <p>{{ step.description }}</p>
+<!-- The process -->
+<div class="section-yellow">
+  <div class="section-inner">
+    <div class="row">
+      <span class="t-label" style="color:var(--green);">The process</span>
+      <div class="row-content"></div>
+    </div>
+    {% for step in how_it_works.steps %}
+    <div class="step-row">
+      <span class="step-num" style="color:var(--green);">{{ step.num }}</span>
+      <div class="step-content">
+        <h3 style="color:var(--green);">{{ step.title }}</h3>
+        <p style="color:var(--green);">{{ step.description }}</p>
+      </div>
+    </div>
+    {% endfor %}
+    <div class="row">
+      <span class="t-label"></span>
+      <div class="row-content">
+        <a class="btn btn-green" href="{{ site.whatsapp_url }}" target="_blank" rel="noopener">Join the WhatsApp group</a>
+      </div>
     </div>
   </div>
-  {% endfor %}
-  <a class="btn btn-primary" href="{{ site.whatsapp_url }}" target="_blank" rel="noopener">Join the WhatsApp group</a>
-</section>
+</div>
 
-<section>
-  <div class="section-label">Collection points</div>
-  <div class="callout">
-    <div class="callout-title">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-      Where to drop off and collect
+<!-- Drop-off locations -->
+<div class="section-green">
+  <div class="section-inner">
+    <div class="row">
+      <span class="t-label" style="color:var(--yellow);">Dropoff locations</span>
+      <div class="row-content locations">
+        {% for point in how_it_works.collection_points %}
+        <p class="t-body location-item" style="color:var(--yellow);">{{ point }}</p>
+        {% endfor %}
+        <p class="t-body location-note" style="color:var(--yellow);">{{ how_it_works.collection_points_note }} <a href="/get-involved/#businesses" style="text-decoration:underline;">Get in touch</a></p>
+      </div>
     </div>
-    {% for point in how_it_works.collection_points %}
-    <p>{{ point }}</p>
-    {% endfor %}
-    <div class="divider"></div>
-    <p style="font-size:0.875rem;">{{ how_it_works.collection_points_note }} <a href="/get-involved/#businesses">Get in touch</a>.</p>
   </div>
-</section>
+</div>
 
-<section>
-  <div class="section-label">Rules &amp; guidance</div>
-
-  <div class="rules-block">
-    <h3>What can be swapped</h3>
-    <ul>
-      {% for item in how_it_works.what_can %}
-      <li>{{ item }}</li>
-      {% endfor %}
-    </ul>
+<!-- What can / can't be swapped -->
+<div class="section-yellow">
+  <div class="section-inner">
+    <div class="row">
+      <span class="t-label" style="color:var(--green);">What can be swapped</span>
+      <div class="row-content">
+        <ul class="rules-list" style="color:var(--green);">
+          {% for item in how_it_works.what_can %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <span class="t-label" style="color:var(--green);">What can't be swapped</span>
+      <div class="row-content">
+        <ul class="rules-list" style="color:var(--green);">
+          {% for item in how_it_works.what_cannot %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <span class="t-label" style="color:var(--green);">Community expectations</span>
+      <div class="row-content">
+        <p class="t-body" style="color:var(--green);">{{ how_it_works.community_rules }}</p>
+      </div>
+    </div>
   </div>
-
-  <div class="rules-block">
-    <h3>What can't be swapped</h3>
-    <ul>
-      {% for item in how_it_works.what_cannot %}
-      <li>{{ item }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-
-  <div class="rules-block">
-    <h3>Community expectations</h3>
-    <p style="margin:0;">{{ how_it_works.community_rules }}</p>
-  </div>
-</section>
-
-<section>
-  <div class="section-label">FAQs</div>
-  {% for faq in how_it_works.faqs %}
-  <div class="faq-item">
-    <div class="faq-q">{{ faq.q }}</div>
-    <div class="faq-a">{{ faq.a }}</div>
-  </div>
-  {% endfor %}
-</section>
-
-<section>
-  <div class="section-label">Supported by</div>
-  <div class="trust">
-    {% for partner in site.partners %}
-    <span class="trust-logo">{{ partner.name }}</span>
-    {% endfor %}
-  </div>
-</section>
+</div>

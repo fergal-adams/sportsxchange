@@ -3,46 +3,73 @@ layout: base.njk
 pageTitle: "About"
 pageDescription: "Why Sportswear X-Change exists — removing cost as a barrier to sport, reducing waste, and strengthening community in North Kerry."
 navActive: about
+navBg: green
 permalink: /about/
 ---
 
-<section>
-  <div class="page-hero">
+<!-- Page hero -->
+<div class="page-hero section-green">
+  <div class="page-hero-inner">
     <h1>About Sportswear X-Change</h1>
   </div>
-</section>
+</div>
 
-<section>
-  <div class="section-label">Our story</div>
-  {% for para in about.story %}
-  <p>{{ para }}</p>
-  {% endfor %}
-</section>
-
-<section>
-  <div class="section-label">Why this matters</div>
-  <div class="cards">
-    {% for card in about.cards %}
-    <div class="card">
-      <div class="card-icon">{{ card.icon }}</div>
-      <h3>{{ card.title }}</h3>
-      <p>{{ card.text }}</p>
+<!-- Our story -->
+<div class="section-yellow">
+  <div class="section-inner">
+    <div class="row">
+      <span class="t-label" style="color:var(--green);">Our story</span>
+      <div class="row-content">
+        {% for para in about.story %}
+        <p class="t-body" style="color:var(--green);">{{ para }}</p>
+        {% endfor %}
+      </div>
     </div>
-    {% endfor %}
   </div>
-</section>
+</div>
 
-<section>
-  <div class="section-label">Circular economy &amp; SDG 12</div>
-  {% for para in about.sdg_text %}
-  <p>{{ para }}</p>
-  {% endfor %}
-</section>
+<!-- Why this matters -->
+<div class="section-green">
+  <div class="section-inner">
+    <div class="row">
+      <span class="t-label" style="color:var(--yellow-mid);">Why this matters</span>
+      <div class="row-content">
+        {% for card in about.cards %}
+        <div>
+          <p class="t-heading" style="color:var(--yellow);">{{ card.title }}</p>
+          <p class="t-body" style="color:var(--yellow-mid); margin-top:12px;">{{ card.text }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
 
-<section>
-  <div class="section-label">About NKEF</div>
-  {% for para in about.nkef_text %}
-  <p>{{ para }}</p>
-  {% endfor %}
-  <a class="btn btn-outline" href="{{ site.facebook_url }}" target="_blank" rel="noopener" style="max-width:240px;">Visit NKEF on Facebook →</a>
-</section>
+<!-- SDG -->
+<div class="section-yellow">
+  <div class="section-inner">
+    <div class="row">
+      <span class="t-label" style="color:var(--green);">Circular economy &amp; SDG 12</span>
+      <div class="row-content">
+        {% for para in about.sdg_text %}
+        <p class="t-body" style="color:var(--green);">{{ para }}</p>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- NKEF -->
+<div class="section-green">
+  <div class="section-inner">
+    <div class="row">
+      <span class="t-label" style="color:var(--yellow-mid);">About NKEF</span>
+      <div class="row-content">
+        {% for para in about.nkef_text %}
+        <p class="t-body" style="color:var(--yellow-mid);">{{ para }}</p>
+        {% endfor %}
+        <div><a class="btn btn-yellow" href="{{ site.facebook_url }}" target="_blank" rel="noopener">Visit NKEF on Facebook</a></div>
+      </div>
+    </div>
+  </div>
+</div>
