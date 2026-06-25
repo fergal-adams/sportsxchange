@@ -3,87 +3,81 @@ layout: base.njk
 pageTitle: "Get involved"
 pageDescription: "Get involved with Sportswear X-Change. For families, sports clubs, and businesses in North Kerry."
 navActive: involved
-navBg: green
+navBg: blue
 permalink: /get-involved/
 ---
 
-<!-- Page hero -->
-<div class="page-hero section-green">
-  <div class="page-hero-inner">
-    <h1>Get Involved</h1>
-  </div>
+<div class="page-hero">
+  <h1>Get Involved</h1>
 </div>
 
-<!-- For families -->
-<div class="section-yellow" id="families">
-  <div class="section-inner">
-    <div class="row">
-      <span class="t-label" style="color:var(--green);">For families</span>
-      <div class="row-content">
-        <p class="t-body" style="color:var(--green);">{{ get_involved.families_intro }}</p>
-        <div style="display:flex;gap:16px;flex-wrap:wrap;">
-          <a class="btn btn-green" href="{{ site.whatsapp_url }}" target="_blank" rel="noopener">Join the WhatsApp group</a>
-          <a class="btn btn-green" href="#">Download our flyer</a>
-        </div>
+<!-- Families -->
+<div class="steps-section" id="families">
+  <div class="step-rule"></div>
+  <div class="step-row" style="align-items:flex-start">
+    <div class="t-display" style="flex:0 0 300px;color:var(--plum)">For families</div>
+    <div style="flex:1;display:flex;flex-direction:column;gap:24px;">
+      <p class="t-body" style="color:var(--plum)">{{ get_involved.families_intro }}</p>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;">
+        <a class="btn btn-plum" href="{{ site.whatsapp_url }}" target="_blank" rel="noopener">Join the WhatsApp group</a>
+        <a class="btn btn-outline-plum" href="#">Download our flyer</a>
       </div>
     </div>
   </div>
+  <div class="step-rule"></div>
 </div>
 
-<!-- For sports clubs -->
-<div class="section-green" id="clubs">
-  <div class="section-inner">
-    <div class="row">
-      <span class="t-label" style="color:var(--yellow-mid);">For sports clubs</span>
-      <div class="row-content">
-        <p class="t-body" style="color:var(--yellow-mid);">{{ get_involved.clubs_text }}</p>
-        <p class="t-body" style="color:var(--yellow-mid);">Email: <a href="mailto:{{ site.email }}" style="text-decoration:underline;">{{ site.email }}</a></p>
-      </div>
+<!-- Clubs -->
+<div class="section-blue section-inner" id="clubs">
+  <div class="step-rule" style="background:var(--plum)"></div>
+  <div class="step-row" style="align-items:flex-start">
+    <div class="t-display" style="flex:0 0 300px;color:var(--plum)">For sports clubs</div>
+    <div style="flex:1;display:flex;flex-direction:column;gap:20px;">
+      <p class="t-body" style="color:var(--plum)">{{ get_involved.clubs_text }}</p>
+      <p class="t-body" style="color:var(--plum)">Email: <a href="mailto:{{ site.email }}" style="text-decoration:underline">{{ site.email }}</a></p>
     </div>
   </div>
+  <div class="step-rule" style="background:var(--plum)"></div>
 </div>
 
-<!-- For businesses -->
-<div class="section-yellow" id="businesses">
-  <div class="section-inner">
-    <div class="row">
-      <span class="t-label" style="color:var(--green);">For businesses</span>
-      <div class="row-content">
-        <p class="t-body" style="color:var(--green);">{{ get_involved.businesses_text }}</p>
-        <p class="t-body" style="color:var(--green);">Email: <a href="mailto:{{ site.email }}" style="text-decoration:underline;">{{ site.email }}</a></p>
-      </div>
+<!-- Businesses -->
+<div class="steps-section" id="businesses">
+  <div class="step-rule"></div>
+  <div class="step-row" style="align-items:flex-start">
+    <div class="t-display" style="flex:0 0 300px;color:var(--plum)">For businesses</div>
+    <div style="flex:1;display:flex;flex-direction:column;gap:20px;">
+      <p class="t-body" style="color:var(--plum)">{{ get_involved.businesses_text }}</p>
+      <p class="t-body" style="color:var(--plum)">Email: <a href="mailto:{{ site.email }}" style="text-decoration:underline">{{ site.email }}</a></p>
     </div>
   </div>
+  <div class="step-rule"></div>
 </div>
 
 <!-- Partners -->
-<div class="section-green">
-  <div class="section-inner">
-    <div class="row">
-      <span class="t-label" style="color:var(--yellow-mid);">Partners &amp; supporters</span>
-      <div class="row-content">
-        <div class="partners">
-          {% for partner in site.partners %}
-          <div class="partner-logo">{{ partner.name }}</div>
-          {% endfor %}
-        </div>
-      </div>
+<div class="section-blue section-inner">
+  <div class="step-rule" style="background:var(--plum)"></div>
+  <div class="step-row" style="align-items:flex-start">
+    <div class="t-display" style="flex:0 0 300px;color:var(--plum)">Partners &amp; supporters</div>
+    <div style="flex:1;display:flex;flex-wrap:wrap;gap:24px;">
+      {% for partner in site.partners %}
+      <div style="background:var(--white);border-radius:10px;padding:16px 24px;font-size:18px;font-weight:600;color:var(--plum)">{{ partner.name }}</div>
+      {% endfor %}
     </div>
   </div>
+  <div class="step-rule" style="background:var(--plum)"></div>
 </div>
 
 <!-- Contact -->
-<div class="section-yellow" id="contact">
-  <div class="section-inner">
-    <div class="row">
-      <span class="t-label" style="color:var(--green);">Contact</span>
-      <div class="row-content">
-        <p class="t-body" style="color:var(--green);">Email: <a href="mailto:{{ site.email }}" style="text-decoration:underline;">{{ site.email }}</a></p>
-        <p class="t-body" style="color:var(--green);">Phone: <a href="tel:{{ site.phone }}">{{ site.phone }}</a></p>
-        <p class="t-body" style="color:var(--green);">WhatsApp: <a href="{{ site.whatsapp_url }}" target="_blank" rel="noopener" style="text-decoration:underline;">Join the group</a></p>
-        <div class="divider"></div>
-        <p class="t-body" style="color:var(--green);">{{ get_involved.contact_note }}</p>
-      </div>
+<div class="steps-section" id="contact">
+  <div class="step-rule"></div>
+  <div class="step-row" style="align-items:flex-start">
+    <div class="t-display" style="flex:0 0 300px;color:var(--plum)">Contact</div>
+    <div style="flex:1;display:flex;flex-direction:column;gap:16px;">
+      <p class="t-body" style="color:var(--plum)">Email: <a href="mailto:{{ site.email }}" style="text-decoration:underline">{{ site.email }}</a></p>
+      <p class="t-body" style="color:var(--plum)">Phone: <a href="tel:{{ site.phone }}">{{ site.phone }}</a></p>
+      <p class="t-body" style="color:var(--plum)">WhatsApp: <a href="{{ site.whatsapp_url }}" target="_blank" rel="noopener" style="text-decoration:underline">Join the group</a></p>
+      <p class="t-body" style="color:var(--plum);margin-top:8px;">{{ get_involved.contact_note }}</p>
     </div>
   </div>
+  <div class="step-rule"></div>
 </div>

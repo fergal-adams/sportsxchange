@@ -3,85 +3,83 @@ layout: base.njk
 pageTitle: "How it works"
 pageDescription: "How to join, post items, browse, and collect through Sportswear X-Change."
 navActive: how
-navBg: green
+navBg: blue
 permalink: /how-it-works/
 ---
 
-<!-- Page hero -->
-<div class="page-hero section-green">
-  <div class="page-hero-inner">
-    <h1>How Sports X-Change Works</h1>
-  </div>
+<div class="page-hero">
+  <h1>How Sports X-Change Works</h1>
 </div>
 
-<!-- The process -->
-<div class="section-yellow">
-  <div class="section-inner">
-    <div class="row">
-      <span class="t-label" style="color:var(--green);">The process</span>
-      <div class="row-content"></div>
-    </div>
+<!-- Steps -->
+<div class="steps-section">
+  <div class="steps-list">
     {% for step in how_it_works.steps %}
-    <div class="step-row">
-      <span class="step-num" style="color:var(--green);">{{ step.num }}</span>
-      <div class="step-content">
-        <h3 style="color:var(--green);">{{ step.title }}</h3>
-        <p style="color:var(--green);">{{ step.description }}</p>
+    <div class="step-item">
+      <div class="step-rule"></div>
+      <div class="step-row">
+        <span class="step-num">0{{ step.num }}.</span>
+        <div class="step-body">
+          <div class="step-title">{{ step.title }}</div>
+          <p class="step-desc">{{ step.description }}</p>
+        </div>
       </div>
     </div>
     {% endfor %}
-    <div class="row">
-      <span class="t-label"></span>
-      <div class="row-content">
-        <a class="btn btn-green" href="{{ site.whatsapp_url }}" target="_blank" rel="noopener">Join the WhatsApp group</a>
-      </div>
-    </div>
+    <div class="step-rule"></div>
+  </div>
+
+  <div class="steps-cta">
+    <div class="steps-cta-text">Scan the code to join our WhatsApp!</div>
+    <a class="nav-join-outline" href="{{ site.whatsapp_url }}" target="_blank" rel="noopener">Join our WhatsApp Group</a>
   </div>
 </div>
 
 <!-- Drop-off locations -->
-<div class="section-green">
-  <div class="section-inner">
-    <div class="row">
-      <span class="t-label" style="color:var(--yellow);">Dropoff locations</span>
-      <div class="row-content locations">
-        {% for point in how_it_works.collection_points %}
-        <p class="t-body location-item" style="color:var(--yellow);">{{ point }}</p>
-        {% endfor %}
-        <p class="t-body location-note" style="color:var(--yellow);">{{ how_it_works.collection_points_note }} <a href="/get-involved/#businesses" style="text-decoration:underline;">Get in touch</a></p>
-      </div>
+<div class="locations-section section-blue">
+  <div class="locations-rule"></div>
+  <div class="locations-inner">
+    <div class="locations-heading">Dropoff locations</div>
+    <div class="locations-list">
+      {% for point in how_it_works.collection_points %}
+      <div class="location-name">{{ point }}</div>
+      <div class="location-rule"></div>
+      {% endfor %}
+      <p class="t-body">{{ how_it_works.collection_points_note }} <a href="/get-involved/#businesses" style="text-decoration:underline;">Get in touch</a></p>
     </div>
   </div>
 </div>
 
-<!-- What can / can't be swapped -->
-<div class="section-yellow">
-  <div class="section-inner">
-    <div class="row">
-      <span class="t-label" style="color:var(--green);">What can be swapped</span>
-      <div class="row-content">
-        <ul class="rules-list" style="color:var(--green);">
-          {% for item in how_it_works.what_can %}
-          <li>{{ item }}</li>
-          {% endfor %}
-        </ul>
-      </div>
+<!-- Rules -->
+<div class="section-orange section-inner">
+  <div class="step-rule" style="background:var(--plum)"></div>
+  <div class="step-row" style="align-items:flex-start">
+    <div style="flex:0 0 300px">
+      <div class="t-display" style="color:var(--plum)">What can be swapped</div>
     </div>
-    <div class="row">
-      <span class="t-label" style="color:var(--green);">What can't be swapped</span>
-      <div class="row-content">
-        <ul class="rules-list" style="color:var(--green);">
-          {% for item in how_it_works.what_cannot %}
-          <li>{{ item }}</li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-    <div class="row">
-      <span class="t-label" style="color:var(--green);">Community expectations</span>
-      <div class="row-content">
-        <p class="t-body" style="color:var(--green);">{{ how_it_works.community_rules }}</p>
-      </div>
-    </div>
+    <ul style="flex:1;list-style:none;display:flex;flex-direction:column;gap:8px;">
+      {% for item in how_it_works.what_can %}
+      <li class="t-body" style="color:var(--plum)">— {{ item }}</li>
+      {% endfor %}
+    </ul>
   </div>
+  <div class="step-rule" style="background:var(--plum)"></div>
+  <div class="step-row" style="align-items:flex-start">
+    <div style="flex:0 0 300px">
+      <div class="t-display" style="color:var(--plum)">What can't be swapped</div>
+    </div>
+    <ul style="flex:1;list-style:none;display:flex;flex-direction:column;gap:8px;">
+      {% for item in how_it_works.what_cannot %}
+      <li class="t-body" style="color:var(--plum)">— {{ item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="step-rule" style="background:var(--plum)"></div>
+  <div class="step-row" style="align-items:flex-start">
+    <div style="flex:0 0 300px">
+      <div class="t-display" style="color:var(--plum)">Community expectations</div>
+    </div>
+    <p class="t-body" style="flex:1;color:var(--plum)">{{ how_it_works.community_rules }}</p>
+  </div>
+  <div class="step-rule" style="background:var(--plum)"></div>
 </div>

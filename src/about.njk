@@ -3,73 +3,69 @@ layout: base.njk
 pageTitle: "About"
 pageDescription: "Why Sportswear X-Change exists — removing cost as a barrier to sport, reducing waste, and strengthening community in North Kerry."
 navActive: about
-navBg: green
+navBg: blue
 permalink: /about/
 ---
 
-<!-- Page hero -->
-<div class="page-hero section-green">
-  <div class="page-hero-inner">
-    <h1>About Sportswear X-Change</h1>
-  </div>
+<div class="page-hero">
+  <h1>About Sportswear X-Change</h1>
 </div>
 
 <!-- Our story -->
-<div class="section-yellow">
-  <div class="section-inner">
-    <div class="row">
-      <span class="t-label" style="color:var(--green);">Our story</span>
-      <div class="row-content">
-        {% for para in about.story %}
-        <p class="t-body" style="color:var(--green);">{{ para }}</p>
-        {% endfor %}
-      </div>
+<div class="section-orange section-inner">
+  <div class="step-rule" style="background:var(--plum)"></div>
+  <div class="step-row" style="align-items:flex-start">
+    <div class="t-display" style="flex:0 0 300px;color:var(--plum)">Our story</div>
+    <div style="flex:1;display:flex;flex-direction:column;gap:20px;">
+      {% for para in about.story %}
+      <p class="t-body" style="color:var(--plum)">{{ para }}</p>
+      {% endfor %}
     </div>
   </div>
+  <div class="step-rule" style="background:var(--plum)"></div>
 </div>
 
 <!-- Why this matters -->
-<div class="section-green">
-  <div class="section-inner">
-    <div class="row">
-      <span class="t-label" style="color:var(--yellow-mid);">Why this matters</span>
-      <div class="row-content">
-        {% for card in about.cards %}
-        <div>
-          <p class="t-heading" style="color:var(--yellow);">{{ card.title }}</p>
-          <p class="t-body" style="color:var(--yellow-mid); margin-top:12px;">{{ card.text }}</p>
-        </div>
-        {% endfor %}
-      </div>
+<div class="section-blue section-inner">
+  <div class="for-me-header">
+    <span style="font-family:'Barlow Semi Condensed',sans-serif;font-size:40px;font-weight:700;text-transform:uppercase;letter-spacing:-0.01em;color:var(--plum)">Why this matters</span>
+  </div>
+  {% for card in about.cards %}
+  <div class="step-row" style="align-items:flex-start;border-top:3px solid var(--plum);padding-top:24px;">
+    <div style="font-size:2rem;flex-shrink:0;width:60px">{{ card.icon }}</div>
+    <div style="flex:1">
+      <div class="t-display" style="color:var(--plum);margin-bottom:12px">{{ card.title }}</div>
+      <p class="t-body" style="color:var(--plum)">{{ card.text }}</p>
     </div>
   </div>
+  {% endfor %}
 </div>
 
 <!-- SDG -->
-<div class="section-yellow">
-  <div class="section-inner">
-    <div class="row">
-      <span class="t-label" style="color:var(--green);">Circular economy &amp; SDG 12</span>
-      <div class="row-content">
-        {% for para in about.sdg_text %}
-        <p class="t-body" style="color:var(--green);">{{ para }}</p>
-        {% endfor %}
-      </div>
+<div class="section-orange section-inner">
+  <div class="step-rule" style="background:var(--plum)"></div>
+  <div class="step-row" style="align-items:flex-start">
+    <div class="t-display" style="flex:0 0 300px;color:var(--plum)">Circular economy &amp; SDG 12</div>
+    <div style="flex:1;display:flex;flex-direction:column;gap:20px;">
+      {% for para in about.sdg_text %}
+      <p class="t-body" style="color:var(--plum)">{{ para }}</p>
+      {% endfor %}
     </div>
   </div>
+  <div class="step-rule" style="background:var(--plum)"></div>
 </div>
 
 <!-- NKEF -->
-<div class="section-green">
-  <div class="section-inner">
-    <div class="row">
-      <span class="t-label" style="color:var(--yellow-mid);">About NKEF</span>
-      <div class="row-content">
-        {% for para in about.nkef_text %}
-        <p class="t-body" style="color:var(--yellow-mid);">{{ para }}</p>
-        {% endfor %}
-        <div><a class="btn btn-yellow" href="{{ site.facebook_url }}" target="_blank" rel="noopener">Visit NKEF on Facebook</a></div>
-      </div>
+<div class="section-peach section-inner">
+  <div class="step-rule" style="background:var(--plum)"></div>
+  <div class="step-row" style="align-items:flex-start">
+    <div class="t-display" style="flex:0 0 300px;color:var(--plum)">About NKEF</div>
+    <div style="flex:1;display:flex;flex-direction:column;gap:20px;">
+      {% for para in about.nkef_text %}
+      <p class="t-body" style="color:var(--plum)">{{ para }}</p>
+      {% endfor %}
+      <div><a class="btn btn-green" href="{{ site.facebook_url }}" target="_blank" rel="noopener">Visit NKEF on Facebook</a></div>
     </div>
   </div>
+  <div class="step-rule" style="background:var(--plum)"></div>
 </div>

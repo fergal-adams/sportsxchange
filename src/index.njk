@@ -3,97 +3,92 @@ layout: base.njk
 pageTitle: "Free sportswear for North Kerry families"
 pageDescription: "Sportswear X-Change is a free community swap for North Kerry families. Donate outgrown sports kit, find what your child needs."
 navActive: home
-navBg: yellow
+navBg: peach
 ---
 
 <!-- Hero -->
 <div class="hero-section">
-  <div class="hero-inner">
-    <div class="hero-text">
-      <h1>{{ home.hero_heading }}</h1>
-      <p>{{ home.hero_subheading }}</p>
-    </div>
-    <div class="hero-image"></div>
+  <div class="hero-display">
+    <div class="hero-display-text">Meet&nbsp;&nbsp;<span class="hero-img-inline"></span>&nbsp;&nbsp;Swap&nbsp;&nbsp;Move
+Community&nbsp;&nbsp;<span class="hero-img-inline"></span>&nbsp;&nbsp;Swap</div>
+  </div>
+  <div class="hero-intro">
+    <svg class="hero-leaf" viewBox="0 0 106 152" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M53 0C53 0 0 38 0 95C0 133.66 23.73 152 53 152C82.27 152 106 133.66 106 95C106 38 53 0 53 0Z" fill="#097C01"/>
+    </svg>
+    <p>{{ home.hero_subheading }}</p>
+    <svg class="hero-leaf" viewBox="0 0 106 152" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M53 0C53 0 0 38 0 95C0 133.66 23.73 152 53 152C82.27 152 106 133.66 106 95C106 38 53 0 53 0Z" fill="#097C01"/>
+    </svg>
   </div>
 </div>
 
-<!-- What is this -->
-<div class="section-green">
-  <div class="section-inner">
-    <div class="row">
-      <span class="t-label" style="color:var(--yellow);">{{ home.intro_heading }}</span>
-      <div class="row-content">
-        <p class="t-body" style="color:var(--yellow);">{{ home.intro_text }}</p>
-      </div>
-    </div>
+<!-- Steps / How it works -->
+<div class="steps-section">
+  <div>
+    <div class="steps-headline">There's no need<br>for new!</div>
+    <p class="steps-subtext">{{ home.intro_text }}</p>
   </div>
-</div>
 
-<!-- How does it work -->
-<div class="section-yellow">
-  <div class="section-inner">
-    <div class="row">
-      <span class="t-label" style="color:var(--green);">How does it work?</span>
-      <div class="row-content"></div>
-    </div>
+  <div class="steps-list">
     {% for step in home.steps %}
-    <div class="step-row">
-      <span class="step-num" style="color:var(--green);">{{ step.num }}</span>
-      <div class="step-content">
-        <h3 style="color:var(--green);">{{ step.title }}</h3>
-        <p style="color:var(--green);">{{ step.description }}</p>
-      </div>
-    </div>
-    {% endfor %}
-    <div class="row">
-      <span class="t-label"></span>
-      <div class="row-content">
-        <a class="btn btn-green" href="/how-it-works/">Find out more</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Who is this for -->
-<div class="section-green">
-  <div class="section-inner">
-    <div class="row">
-      <span class="t-label" style="color:var(--yellow-mid);">{{ home.who_heading }}</span>
-      <div class="row-content">
-        <p class="t-body" style="color:var(--yellow-mid);">{{ home.who_text }}</p>
-        <div><a class="btn btn-yellow" href="/about/">Read more about us</a></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Drop-off locations -->
-<div class="section-yellow">
-  <div class="section-inner">
-    <div class="row">
-      <span class="t-label" style="color:var(--green);">Dropoff locations</span>
-      <div class="row-content locations">
-        {% for point in how_it_works.collection_points %}
-        <p class="t-body location-item" style="color:var(--green);">{{ point }}</p>
-        {% endfor %}
-        <p class="t-body location-note" style="color:var(--green);">{{ how_it_works.collection_points_note }} <a href="/get-involved/#businesses" style="text-decoration:underline;">Get in touch</a></p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Supported by -->
-<div class="section-green">
-  <div class="section-inner">
-    <div class="row">
-      <span class="t-label" style="color:var(--yellow-mid);">Supported by</span>
-      <div class="row-content">
-        <div class="partners">
-          {% for partner in site.partners %}
-          <div class="partner-logo">{{ partner.name }}</div>
-          {% endfor %}
+    <div class="step-item">
+      <div class="step-rule"></div>
+      <div class="step-row">
+        <span class="step-num">0{{ step.num }}.</span>
+        <div class="step-body">
+          <div class="step-title">{{ step.title }}</div>
+          <p class="step-desc">{{ step.description }}</p>
         </div>
       </div>
     </div>
+    {% endfor %}
+    <div class="step-rule"></div>
+  </div>
+
+  <div class="steps-cta">
+    <div class="steps-cta-text">Scan the code to join our WhatsApp!</div>
+    <a class="nav-join-outline" href="{{ site.whatsapp_url }}" target="_blank" rel="noopener">Join our WhatsApp Group</a>
+  </div>
+</div>
+
+<!-- Is this for me? -->
+<div class="blue-section">
+  <div class="for-me-header">
+    <span>Is this</span>
+    <span class="for-me-icon">🏃</span>
+    <span>for me?</span>
+  </div>
+  <p class="for-me-body">{{ home.who_text }}</p>
+</div>
+
+<!-- Drop-off locations -->
+<div class="locations-section">
+  <div class="locations-rule"></div>
+  <div class="locations-inner">
+    <div class="locations-heading">Dropoff locations</div>
+    <div class="locations-list">
+      {% for point in how_it_works.collection_points %}
+      <div class="location-name">{{ point }}</div>
+      <div class="location-rule"></div>
+      {% endfor %}
+      <p class="t-body">{{ how_it_works.collection_points_note }} <a href="/get-involved/#businesses" style="text-decoration:underline;">Get in touch</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- Get involved banner -->
+<div class="involved-banner">
+  <div class="involved-card">
+    <div class="involved-card-text">Want to get involved and become a dropoff location?</div>
+    <a class="btn-outline-white" href="/get-involved/#businesses">Find out more →</a>
+  </div>
+</div>
+
+<!-- Photo strip -->
+<div class="photo-strip">
+  <div class="photo-track">
+    {% for i in range(0, 12) %}<div class="photo-tile"></div>{% endfor %}
+    {% for i in range(0, 12) %}<div class="photo-tile"></div>{% endfor %}
   </div>
 </div>
