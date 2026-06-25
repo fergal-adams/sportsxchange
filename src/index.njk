@@ -9,8 +9,8 @@ navBg: peach
 <!-- Hero -->
 <div class="hero-section">
   <div class="hero-display">
-    <div class="hero-display-text">Meet&nbsp;&nbsp;<span class="hero-img-inline"></span>&nbsp;&nbsp;Swap&nbsp;&nbsp;Move
-Community&nbsp;&nbsp;<span class="hero-img-inline"></span>&nbsp;&nbsp;Swap</div>
+    <div class="hero-display-text">Meet&nbsp;&nbsp;<span class="hero-img-inline"><img src="/assets/hero-1.jpg" alt=""></span>&nbsp;&nbsp;Swap&nbsp;&nbsp;Move
+Community&nbsp;&nbsp;<span class="hero-img-inline"><img src="/assets/hero-2.jpg" alt=""></span>&nbsp;&nbsp;Swap</div>
   </div>
   <div class="hero-intro">
     <svg class="hero-leaf" viewBox="0 0 106 152" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -48,7 +48,10 @@ Community&nbsp;&nbsp;<span class="hero-img-inline"></span>&nbsp;&nbsp;Swap</div>
 
   <div class="steps-cta">
     <div class="steps-cta-text">Scan the code to join our WhatsApp!</div>
-    <a class="nav-join-outline" href="{{ site.whatsapp_url }}" target="_blank" rel="noopener">Join our WhatsApp Group</a>
+    <div class="steps-cta-right">
+      <img src="/assets/qrcode.png" alt="Scan to join WhatsApp group" class="qr-code">
+      <a class="nav-join-outline" href="{{ site.whatsapp_url }}" target="_blank" rel="noopener">Join our WhatsApp Group</a>
+    </div>
   </div>
 </div>
 
@@ -56,7 +59,7 @@ Community&nbsp;&nbsp;<span class="hero-img-inline"></span>&nbsp;&nbsp;Swap</div>
 <div class="blue-section">
   <div class="for-me-header">
     <span>Is this</span>
-    <span class="for-me-icon">🏃</span>
+    <img src="/assets/isthisforme.svg" alt="" aria-hidden="true" class="for-me-icon-img">
     <span>for me?</span>
   </div>
   <p class="for-me-body">{{ home.who_text }}</p>
