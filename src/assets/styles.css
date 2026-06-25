@@ -38,10 +38,10 @@ nav {
   z-index: 100;
 }
 
-nav.nav-peach  { background: var(--peach); }
-nav.nav-orange { background: var(--orange); }
-nav.nav-blue   { background: var(--blue); }
-nav.nav-green  { background: var(--green); }
+nav.nav-peach  { background: transparent; }
+nav.nav-orange { background: transparent; }
+nav.nav-blue   { background: transparent; }
+nav.nav-green  { background: transparent; }
 
 .nav-pill {
   display: flex;
@@ -162,10 +162,8 @@ nav.nav-green .nav-links a { color: var(--peach); }
   height: clamp(55px, 6.6vw, 95px);
   background: var(--grey);
   border-radius: 10px;
-  vertical-align: middle;
+  vertical-align: baseline;
   margin: 0 8px;
-  position: relative;
-  top: -4px;
   overflow: hidden;
 }
 
