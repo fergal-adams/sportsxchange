@@ -1,23 +1,21 @@
 story:
-  - "North Kerry has fantastic sports clubs and passionate young athletes. But sports can be expensive. Kids grow fast — kits that fit one year are too small the next. Good quality gear ends up in cupboards or landfills."
-  - "Sportswear X-Change started with a simple idea: what if families could share? What if outgrown kit could find a new player instead of going to waste?"
-  - "We're starting in North Kerry to prove this works. Our goal is to remove cost as a barrier to sport, reduce waste, and strengthen community."
+  - "North Kerry has fantastic sports clubs and passionate young athletes. But sports can be expensive. Children grow fast and kits that fit one year are too small the next. Good quality gear ends up in cupboards, or worse still, landfill."
+  - "Sports X-Change started with a simple idea: what if families could share? What if outgrown gear could find a new player instead of going to waste?"
+  - "We're starting in North Kerry to prove this works. Our goal is to remove cost as a barrier to sport, reduce waste and strengthen community."
 
 cards:
-  - icon: "👨‍👩‍👧"
-    title: For families
-    text: "Sport keeps kids healthy and happy. Cost shouldn't be a barrier."
-  - icon: "🌱"
-    title: For the environment
-    text: "Every item in use is one less in landfill. Less waste, fewer emissions."
-  - icon: "🤝"
-    title: For community
-    text: "Neighbours helping neighbours. The spirit of North Kerry sport."
+  - title: For us
+    text: "Sport keeps everyone healthy and happy. Cost shouldn't be a barrier. Sports X-Change makes participation affordable for everyone."
+  - title: For the environment
+    text: "Every item that stays in use is one less item going to landfill. Polyester textiles are a major waste problem. By keeping gear in circulation, we reduce demand for new production and all the emissions that go with it."
+  - title: For community
+    text: "This is about neighbours and communities helping each other out. It's the principle that makes North Kerry's sports clubs work."
 
+sdg_heading: "Circular living"
 sdg_text:
-  - "Sportswear X-Change aligns with the UN's Sustainable Development Goal 12: Responsible Consumption and Production."
-  - 'Instead of the traditional "make, use, throw away" cycle, we''re creating a circular model where items stay in use for as long as possible. This reduces waste, lowers carbon emissions, and uses resources more wisely.'
+  - "Sports X-Change aligns with the UN's Sustainable Development Goal 12: Responsible Consumption and Production."
+  - "Instead of the traditional \"make, use, throw away\" cycle, we're creating a circular model where items stay in use for as long as possible. This reduces waste, lowers carbon emissions and uses resources more wisely."
 
 nkef_text:
   - "North Kerry Environmental Forum is a community group dedicated to environmental action and sustainability in North Kerry. We work on circular economy initiatives, community engagement, and practical solutions to reduce waste."
-  - "For more on our sustainability work and SDG resources, visit our Facebook page."
+  - "For more on our sustainability work and SDG resources, visit our Facebook page: Ballybunion NKEF"

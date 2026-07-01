@@ -1,17 +1,19 @@
+hero_intro: "It's simple — join our WhatsApp group, post what you have or find what you need, and arrange collection at a local drop-off point."
+
 steps:
   - num: 1
-    title: Joining the group
-    description: "Search for Sportswear X-Change North Kerry on WhatsApp and request to join. We'll add you to the community group."
+    title: Join the group
+    description: "Scan the QR code on this site or tap the join button to request access to our WhatsApp group. We'll add you to the community."
   - num: 2
-    title: Posting items
-    description: 'Take a photo of the item. Tell us: what sport, size, condition, and any details (e.g., "Size 5 football boots, excellent condition"). Post it in the group.'
+    title: Post items
+    description: "Take a photo of the item and post it in the group with a few details — what it is, the size, condition, and where you can drop off or collect. For example: \"Size 5 Adidas football boots, good condition, some scuff marks. Can drop to SuperValu Ballybunion.\""
   - num: 3
-    title: Browsing & claiming
-    description: "See something your child needs? Reply to the post and arrange collection. It's that simple."
+    title: Claim and collect
+    description: "See something you or your child needs? Reply to the post and arrange collection between yourselves. First to reply gets it."
 
 collection_points:
   - SuperValu Ballybunion
-  - Ballybunion Community Centre
+  - Beale GAA Club
 collection_points_note: "Want to become a drop-off point?"
 
 what_can:
@@ -28,11 +30,23 @@ what_cannot:
 community_rules: "Be respectful and reliable. Arrange collection within 48 hours. Treat items with care. Give accurate descriptions of condition."
 
 faqs:
-  - q: What if the size isn't right?
-    a: We suggest arranging to swap it for something else from the group, or returning it to the original donor.
+  - q: What can I post?
+    a: "Any sports gear in good, clean condition. This includes but isn't limited to: jerseys, kits, shorts, tracksuits, boots, trainers, shin guards, helmets, hurls, tennis rackets, golf clubs, wetsuits, surfboards, gym equipment, yoga mats, cycling gear, swimming goggles — if it's used for sport or exercise and it's still in good nick, it's welcome."
+  - q: What shouldn't be posted?
+    a: "Anything damaged, stained, or heavily worn. Non-sports items. Items with missing parts."
   - q: Can I join if I have nothing to give yet?
-    a: "Yes! Take what you need. When your child outgrows items, contribute back."
+    a: "Absolutely. Take what you need. When you have something to pass on, post it."
+  - q: How do I claim an item?
+    a: "Reply to the post in the WhatsApp group and arrange collection between yourselves. First to reply gets it."
+  - q: Where do I collect or drop off items?
+    a: "We have drop-off points at SuperValu Ballybunion and Beale GAA Club. Please use these public locations rather than sharing home addresses."
+  - q: What if the size isn't right?
+    a: "No problem — swap it for something else from the group, or return it to the original poster."
   - q: How long are items available?
-    a: Items stay listed until someone claims them. If unclaimed after a month, the donor can remove them.
+    a: "Until someone claims them. If unclaimed after a month, the person who posted can remove them."
+  - q: Is this just for children's gear?
+    a: "No — adults are welcome too. If you've got gear you no longer use, someone else probably needs it."
+  - q: Do I have to swap? Can I just give stuff away?
+    a: "Yes! There's no obligation to take something in return. If you just want to pass things on, that's brilliant."
   - q: Who manages this?
-    a: Sportswear X-Change is run by North Kerry Environmental Forum with support from the community.
+    a: "Sportswear X-Change is run by North Kerry Environmental Forum with support from the community."

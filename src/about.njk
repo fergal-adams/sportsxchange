@@ -3,59 +3,57 @@ layout: base.njk
 pageTitle: "About"
 pageDescription: "Why Sportswear X-Change exists — removing cost as a barrier to sport, reducing waste, and strengthening community in North Kerry."
 navActive: about
-navBg: blue
+navBg: peach
 permalink: /about/
 ---
 
-<div class="page-hero">
-  <h1>About Sportswear X-Change</h1>
-</div>
-
-<!-- Our story -->
-<div class="section-orange section-inner">
-  <div class="step-rule" style="background:var(--plum)"></div>
-  <div class="step-row" style="align-items:flex-start">
-    <div class="t-display" style="flex:0 0 300px;color:var(--plum)">Our story</div>
-    <div style="flex:1;display:flex;flex-direction:column;gap:20px;">
+<!-- Page hero (peach) -->
+<div class="page-hero section-peach">
+  <div class="page-hero-inner">
+    <div class="page-hero-display">About<br>Sports<br>X-Change.</div>
+    <div style="flex:1;display:flex;flex-direction:column;gap:20px;padding-bottom:12px;">
       {% for para in about.story %}
-      <p class="t-body" style="color:var(--plum)">{{ para }}</p>
+      <p class="page-hero-sub">{{ para }}</p>
       {% endfor %}
+      <a class="nav-join-outline" href="{{ site.whatsapp_url }}" target="_blank" rel="noopener" style="align-self:flex-start">Join our WhatsApp Group</a>
     </div>
   </div>
-  <div class="step-rule" style="background:var(--plum)"></div>
 </div>
 
-<!-- Why this matters -->
-<div class="section-blue section-inner">
-  <div class="for-me-header">
-    <span style="font-family:'Barlow Semi Condensed',sans-serif;font-size:40px;font-weight:700;text-transform:uppercase;letter-spacing:-0.01em;color:var(--plum)">Why this matters</span>
+<!-- Why this matters (orange) -->
+<div class="section-orange section-inner">
+  <div class="steps-headline-centered">
+    <img src="/assets/ellipse-stroke.svg" class="section-ellipse" alt="" aria-hidden="true">
+    <span>Why this matters</span>
+    <img src="/assets/ellipse-stroke-2.svg" class="section-ellipse" alt="" aria-hidden="true">
   </div>
-  {% for card in about.cards %}
-  <div class="step-row" style="align-items:flex-start;border-top:3px solid var(--plum);padding-top:24px;">
-    <div style="font-size:2rem;flex-shrink:0;width:60px">{{ card.icon }}</div>
-    <div style="flex:1">
-      <div class="t-display" style="color:var(--plum);margin-bottom:12px">{{ card.title }}</div>
+  <div class="why-cards-row">
+    {% for card in about.cards %}
+    <div class="why-card-col">
+      <div class="step-rule" style="background:var(--plum)"></div>
+      <div class="t-display" style="color:var(--plum);margin:20px 0 12px;">{{ card.title }}</div>
       <p class="t-body" style="color:var(--plum)">{{ card.text }}</p>
     </div>
+    {% endfor %}
   </div>
-  {% endfor %}
 </div>
 
-<!-- SDG -->
-<div class="section-orange section-inner">
+<!-- Circular living (blue) -->
+<div class="section-blue section-inner">
   <div class="step-rule" style="background:var(--plum)"></div>
   <div class="step-row" style="align-items:flex-start">
-    <div class="t-display" style="flex:0 0 300px;color:var(--plum)">Circular economy &amp; SDG 12</div>
+    <div class="t-display" style="flex:0 0 300px;color:var(--plum)">{{ about.sdg_heading }}</div>
     <div style="flex:1;display:flex;flex-direction:column;gap:20px;">
       {% for para in about.sdg_text %}
       <p class="t-body" style="color:var(--plum)">{{ para }}</p>
       {% endfor %}
+      <div><a class="btn btn-plum" href="https://circular.ie" target="_blank" rel="noopener">Learn more at Circular.ie →</a></div>
     </div>
   </div>
   <div class="step-rule" style="background:var(--plum)"></div>
 </div>
 
-<!-- NKEF -->
+<!-- About NKEF (peach) -->
 <div class="section-peach section-inner">
   <div class="step-rule" style="background:var(--plum)"></div>
   <div class="step-row" style="align-items:flex-start">
@@ -64,7 +62,7 @@ permalink: /about/
       {% for para in about.nkef_text %}
       <p class="t-body" style="color:var(--plum)">{{ para }}</p>
       {% endfor %}
-      <div><a class="btn btn-green" href="{{ site.facebook_url }}" target="_blank" rel="noopener">Visit NKEF on Facebook</a></div>
+      <div><a class="btn btn-green" href="{{ site.facebook_url }}" target="_blank" rel="noopener">Ballybunion NKEF Facebook →</a></div>
     </div>
   </div>
   <div class="step-rule" style="background:var(--plum)"></div>

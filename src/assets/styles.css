@@ -29,19 +29,20 @@ img { max-width: 100%; display: block; }
 /* ===== NAV ===== */
 nav {
   padding: 24px var(--pad);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
   position: sticky;
   top: 0;
   z-index: 100;
+  background: transparent;
 }
 
-nav.nav-peach  { background: transparent; }
-nav.nav-orange { background: transparent; }
-nav.nav-blue   { background: transparent; }
-nav.nav-green  { background: transparent; }
+.nav-inner {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 12px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 .nav-pill {
   display: flex;
@@ -51,11 +52,9 @@ nav.nav-green  { background: transparent; }
   border: 2px solid var(--plum);
   border-radius: 100px;
   flex: 1;
-  max-width: 886px;
-  background: transparent;
+  min-width: 0;
+  background: var(--peach);
 }
-
-.nav-pill.white-border { border-color: var(--white); }
 
 .nav-logo-link { display: flex; align-items: center; }
 .nav-logo-img { height: 16px; width: auto; display: block; max-width: 220px; }
@@ -583,6 +582,137 @@ footer {
   color: var(--plum);
 }
 
+/* ===== CENTERED SECTION HEADINGS WITH ELLIPSES ===== */
+.steps-headline-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  text-align: center;
+}
+
+.steps-headline-centered span {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: clamp(48px, 6vw, 74px);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--plum);
+}
+
+.section-ellipse { width: 50px; height: auto; flex-shrink: 0; }
+
+/* ===== WHO SUB TEXT ===== */
+.who-sub {
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--plum);
+  text-align: center;
+  opacity: 0.7;
+  margin-top: -24px;
+}
+
+/* ===== WHY CARDS 3-COLUMN ===== */
+.why-cards-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* ===== GET INVOLVED LABEL ===== */
+.gi-label {
+  flex: 0 0 300px;
+  font-size: clamp(28px, 3.5vw, 48px) !important;
+  align-self: flex-start;
+}
+
+.gi-section .step-row { align-items: flex-start; }
+
+/* ===== PEACH LOCATIONS ===== */
+.locations-section.section-peach .locations-rule { background: var(--plum); }
+.locations-section.section-peach .location-rule  { background: var(--plum); }
+
+/* ===== PAGE HERO (inner pages — rich version) ===== */
+.page-hero {
+  padding: 80px var(--pad) 100px;
+}
+
+.page-hero-inner {
+  display: flex;
+  align-items: flex-end;
+  gap: 80px;
+  max-width: 1200px;
+}
+
+.page-hero-display {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: clamp(64px, 9vw, 130px);
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--plum);
+  flex-shrink: 0;
+}
+
+.page-hero-sub {
+  font-size: 22px;
+  line-height: 30px;
+  color: var(--plum);
+  max-width: 440px;
+  padding-bottom: 12px;
+}
+
+/* ===== FAQ ===== */
+.faq-item {
+  padding: 24px 0;
+  border-bottom: 3px solid var(--plum);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faq-q {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  color: var(--plum);
+}
+
+.faq-a {
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--plum);
+}
+
+/* ===== WHY CARDS (about) ===== */
+.why-card-num {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: var(--plum);
+  flex-shrink: 0;
+  width: 80px;
+}
+
+/* ===== PARTNER CHIPS ===== */
+.partner-chip {
+  background: var(--plum);
+  color: var(--peach);
+  border-radius: 100px;
+  padding: 12px 28px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 860px) {
   :root { --pad: 20px; }
@@ -618,6 +748,8 @@ footer {
 
   .locations-inner { flex-direction: column; }
   .locations-heading { width: auto; }
+
+  .gi-label { flex: none !important; }
 
   .involved-card { flex-direction: column; align-items: flex-start; }
 

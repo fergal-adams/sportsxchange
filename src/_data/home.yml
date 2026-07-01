@@ -1,15 +1,9 @@
-hero_pill: "North Kerry · Free · Community"
-hero_heading: "Free sportswear for North Kerry families"
-hero_subheading: "Your child outgrows gear. Another family needs it. Let's keep it in circulation."
-hero_cta: "Join the WhatsApp group"
-hero_qr_label: "Scan the QR code or tap the button to join our community group."
+hero_subheading: "A free sports gear community swap for people in and around North Kerry."
 
-intro_heading: "What is this?"
-intro_text: "Sportswear X-Change is a community swap for North Kerry families. Instead of buying new kit, share what you have and take what you need. It's free, it's simple, and it's about community."
+intro_heading: "KEEPING GOOD GEAR GOING!"
+intro_text: "Instead of buying new, we help families find the gear they need or pass on what they've outgrown. It's simple, it's free, and it keeps good gear in play. Better for your pocket, better for the planet."
 
-who_heading: "Who is this for?"
-who_text: "Families with kids who play sports. Sports clubs looking to reduce costs. Anyone with good-quality gear they've outgrown."
-
+steps_heading: "HOW DOES IT WORK?"
 steps:
   - num: 1
     title: Join
@@ -20,3 +14,7 @@ steps:
   - num: 3
     title: Collect
     description: Arrange collection from a local drop-off point
+
+who_heading: "WHO IS SPORTS X CHANGE FOR?"
+who_text: "This project is for everyone: families with kids who play sports. Sports clubs looking to reduce costs. And anyone with good-quality gear they've outgrown. The more people join, the more gear we can keep going — so please spread the word!"
+who_sub: "Sports X Change is a project from North Kerry Environmental Forum. It is supported by Circular.ie"

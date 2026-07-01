@@ -3,16 +3,25 @@ layout: base.njk
 pageTitle: "How it works"
 pageDescription: "How to join, post items, browse, and collect through Sportswear X-Change."
 navActive: how
-navBg: blue
+navBg: peach
 permalink: /how-it-works/
 ---
 
-<div class="page-hero">
-  <h1>How Sports X-Change Works</h1>
+<!-- Page hero (peach) -->
+<div class="page-hero section-peach">
+  <div class="page-hero-inner">
+    <div class="page-hero-display">How it<br>works.</div>
+    <p class="page-hero-sub">{{ how_it_works.hero_intro }}</p>
+  </div>
 </div>
 
-<!-- Steps -->
+<!-- Steps (orange) -->
 <div class="steps-section">
+  <div class="steps-headline-centered">
+    <img src="/assets/ellipse-stroke.svg" class="section-ellipse" alt="" aria-hidden="true">
+    <span>3 simple steps</span>
+    <img src="/assets/ellipse-stroke-2.svg" class="section-ellipse" alt="" aria-hidden="true">
+  </div>
   <div class="steps-list">
     {% for step in how_it_works.steps %}
     <div class="step-item">
@@ -38,8 +47,8 @@ permalink: /how-it-works/
   </div>
 </div>
 
-<!-- Drop-off locations -->
-<div class="locations-section section-blue">
+<!-- Drop-off locations (peach) -->
+<div class="locations-section section-peach">
   <div class="locations-rule"></div>
   <div class="locations-inner">
     <div class="locations-heading">Dropoff locations</div>
@@ -53,7 +62,15 @@ permalink: /how-it-works/
   </div>
 </div>
 
-<!-- Rules -->
+<!-- Get involved banner (peach) -->
+<div class="involved-banner section-peach">
+  <div class="involved-card">
+    <div class="involved-card-text">Want to get involved and become a dropoff location?</div>
+    <a class="btn-outline-white" href="/get-involved/#businesses">Find out more →</a>
+  </div>
+</div>
+
+<!-- What can / can't / community rules (orange) -->
 <div class="section-orange section-inner">
   <div class="step-rule" style="background:var(--plum)"></div>
   <div class="step-row" style="align-items:flex-start">
@@ -78,11 +95,21 @@ permalink: /how-it-works/
     </ul>
   </div>
   <div class="step-rule" style="background:var(--plum)"></div>
-  <div class="step-row" style="align-items:flex-start">
-    <div style="flex:0 0 300px">
-      <div class="t-display" style="color:var(--plum)">Community expectations</div>
-    </div>
-    <p class="t-body" style="flex:1;color:var(--plum)">{{ how_it_works.community_rules }}</p>
+</div>
+
+<!-- FAQs (blue) -->
+<div class="section-blue section-inner">
+  <div class="steps-headline-centered">
+    <img src="/assets/ellipse-stroke.svg" class="section-ellipse" alt="" aria-hidden="true">
+    <span>FAQs</span>
+    <img src="/assets/ellipse-stroke-2.svg" class="section-ellipse" alt="" aria-hidden="true">
   </div>
-  <div class="step-rule" style="background:var(--plum)"></div>
+  <div style="display:flex;flex-direction:column;gap:0;">
+    {% for faq in how_it_works.faqs %}
+    <div class="faq-item">
+      <div class="faq-q">{{ faq.q }}</div>
+      <p class="faq-a">{{ faq.a }}</p>
+    </div>
+    {% endfor %}
+  </div>
 </div>

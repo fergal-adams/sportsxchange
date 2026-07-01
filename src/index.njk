@@ -19,10 +19,10 @@ Community&nbsp;&nbsp;<span class="hero-img-inline"><img src="/assets/hero-2.jpg"
   </div>
 </div>
 
-<!-- Steps / How it works -->
+<!-- Keeping good gear going -->
 <div class="steps-section">
   <div>
-    <div class="steps-headline">There's no need<br>for new!</div>
+    <div class="steps-headline">{{ home.intro_heading }}</div>
     <p class="steps-subtext">{{ home.intro_text }}</p>
   </div>
 
@@ -51,18 +51,8 @@ Community&nbsp;&nbsp;<span class="hero-img-inline"><img src="/assets/hero-2.jpg"
   </div>
 </div>
 
-<!-- Is this for me? -->
-<div class="blue-section">
-  <div class="for-me-header">
-    <span>Is this</span>
-    <img src="/assets/isthisforme.svg" alt="" aria-hidden="true" class="for-me-icon-img">
-    <span>for me?</span>
-  </div>
-  <p class="for-me-body">{{ home.who_text }}</p>
-</div>
-
 <!-- Drop-off locations -->
-<div class="locations-section">
+<div class="locations-section section-peach">
   <div class="locations-rule"></div>
   <div class="locations-inner">
     <div class="locations-heading">Dropoff locations</div>
@@ -77,7 +67,7 @@ Community&nbsp;&nbsp;<span class="hero-img-inline"><img src="/assets/hero-2.jpg"
 </div>
 
 <!-- Get involved banner -->
-<div class="involved-banner">
+<div class="involved-banner section-peach">
   <div class="involved-card">
     <div class="involved-card-text">Want to get involved and become a dropoff location?</div>
     <a class="btn-outline-white" href="/get-involved/#businesses">Find out more →</a>
@@ -90,4 +80,13 @@ Community&nbsp;&nbsp;<span class="hero-img-inline"><img src="/assets/hero-2.jpg"
     {% for i in range(0, 12) %}<div class="photo-tile"></div>{% endfor %}
     {% for i in range(0, 12) %}<div class="photo-tile"></div>{% endfor %}
   </div>
+</div>
+
+<!-- Who is this for? -->
+<div class="blue-section">
+  <div class="for-me-header">
+    <span>{{ home.who_heading }}</span>
+  </div>
+  <p class="for-me-body">{{ home.who_text }}</p>
+  <p class="who-sub">{{ home.who_sub }}</p>
 </div>
