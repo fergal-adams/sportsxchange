@@ -51,6 +51,22 @@
 function toggleNav() {
   document.getElementById('nav').classList.toggle('open');
 }
+
+(function () {
+  var els = document.querySelectorAll('.js-scroll-tilt');
+  if (!els.length) return;
+  function update() {
+    els.forEach(function (el) {
+      var rect = el.getBoundingClientRect();
+      var vh = window.innerHeight;
+      // 0 when top of element is at bottom of viewport, 1 when fully scrolled past centre
+      var progress = Math.min(1, Math.max(0, (vh - rect.top) / (vh + rect.height)));
+      el.style.transform = 'rotate(' + (progress * 5).toFixed(2) + 'deg)';
+    });
+  }
+  window.addEventListener('scroll', update, { passive: true });
+  update();
+}());
 </script>
 </body>
 </html>

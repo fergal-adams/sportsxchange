@@ -1,19 +1,20 @@
 hero_subheading: "A free sports gear community swap for people in and around North Kerry."
 
 intro_heading: "KEEPING GOOD GEAR GOING!"
-intro_text: "Instead of buying new, we help families find the gear they need or pass on what they've outgrown. It's simple, it's free, and it keeps good gear in play. Better for your pocket, better for the planet."
+intro_text: "Instead of buying new, we help families find the gear they need or pass on what they've outgrown."
+intro_text_2: "It's simple, it's free, and it keeps good gear in play. Better for your pocket, better for the planet."
 
 steps_heading: "HOW DOES IT WORK?"
 steps:
   - num: 1
     title: Join
-    description: Join our WhatsApp group
+    description: Find us on WhatsApp and join the community group.
   - num: 2
-    title: Post or browse
-    description: Share gear or find what you need
+    title: Post or Browse
+    description: Post items you or your child have outgrown, or browse what others are sharing.
   - num: 3
-    title: Collect
-    description: Arrange collection from a local drop-off point
+    title: Drop or Collect
+    description: Arrange pickup at one of our trusted local drop-off points listed below.
 
 who_heading: "WHO IS SPORTS X CHANGE FOR?"
 who_text: "This project is for everyone: families with kids who play sports. Sports clubs looking to reduce costs. And anyone with good-quality gear they've outgrown. The more people join, the more gear we can keep going — so please spread the word!"
