@@ -8,10 +8,7 @@ navBg: peach
 
 <!-- Hero -->
 <div class="hero-section">
-  <div class="hero-display">
-    <div class="hero-display-text">Meet&nbsp;&nbsp;<span class="hero-img-inline"><img src="/assets/hero-1.jpg" alt=""></span>&nbsp;&nbsp;Swap&nbsp;&nbsp;Move
-Community&nbsp;&nbsp;<span class="hero-img-inline"><img src="/assets/hero-2.jpg" alt=""></span>&nbsp;&nbsp;Swap</div>
-  </div>
+  <img src="/assets/logo.svg" alt="Sports X Change" class="hero-wordmark">
   <div class="hero-intro">
     <img src="/assets/ellipse-stroke.svg" class="hero-leaf" alt="" aria-hidden="true">
     <p>{{ home.hero_subheading }}</p>
@@ -21,17 +18,29 @@ Community&nbsp;&nbsp;<span class="hero-img-inline"><img src="/assets/hero-2.jpg"
 
 <!-- Keeping good gear going -->
 <div class="steps-section">
-  <div>
-    <div class="steps-headline">{{ home.intro_heading }}</div>
-    <p class="steps-subtext">{{ home.intro_text }}</p>
+  <div class="steps-intro">
+    <div class="steps-intro-text">
+      <div class="steps-headline">{{ home.intro_heading }}</div>
+      <p class="steps-subtext">{{ home.intro_text }}</p>
+      <a class="nav-join-outline" href="{{ site.whatsapp_url }}" target="_blank" rel="noopener">Join our WhatsApp Group</a>
+    </div>
+    <img src="/assets/hero-1.jpg" alt="Sports gear swap" class="steps-intro-img">
   </div>
+</div>
 
-  <div class="steps-list">
+<!-- How does it work? -->
+<div class="how-section">
+  <div class="how-heading-row">
+    <img src="/assets/ellipse-stroke.svg" class="section-ellipse" alt="" aria-hidden="true">
+    <div class="how-heading">HOW DOES IT WORK?</div>
+    <img src="/assets/ellipse-stroke-2.svg" class="section-ellipse" alt="" aria-hidden="true">
+  </div>
+  <div class="how-steps-grid">
     {% for step in home.steps %}
-    <div class="step-item">
+    <div class="how-step-col">
       <div class="step-rule"></div>
       <div class="step-row">
-        <span class="step-num">0{{ step.num }}.</span>
+        <span class="step-num">0{{ step.num }}</span>
         <div class="step-body">
           <div class="step-title">{{ step.title }}</div>
           <p class="step-desc">{{ step.description }}</p>
@@ -39,38 +48,29 @@ Community&nbsp;&nbsp;<span class="hero-img-inline"><img src="/assets/hero-2.jpg"
       </div>
     </div>
     {% endfor %}
-    <div class="step-rule"></div>
   </div>
-
-  <div class="steps-cta">
-    <div class="steps-cta-text">Scan the code to join our WhatsApp!</div>
-    <div class="steps-cta-right">
-      <img src="/assets/qrcode.png" alt="Scan to join WhatsApp group" class="qr-code">
-      <a class="nav-join-outline" href="{{ site.whatsapp_url }}" target="_blank" rel="noopener">Join our WhatsApp Group</a>
-    </div>
+  <div class="how-read-more">
+    <a class="nav-join-outline" href="/how-it-works/">Read more about how it works →</a>
   </div>
 </div>
 
 <!-- Drop-off locations -->
-<div class="locations-section section-peach">
-  <div class="locations-rule"></div>
-  <div class="locations-inner">
-    <div class="locations-heading">Dropoff locations</div>
-    <div class="locations-list">
-      {% for point in how_it_works.collection_points %}
-      <div class="location-name">{{ point }}</div>
-      <div class="location-rule"></div>
-      {% endfor %}
-      <p class="t-body">{{ how_it_works.collection_points_note }} <a href="/get-involved/#businesses" style="text-decoration:underline;">Get in touch</a></p>
+<div class="dropoff-section">
+  <div class="dropoff-top">
+    <div class="dropoff-rule"></div>
+    <div class="dropoff-inner">
+      <div class="dropoff-heading">Dropoff<br>Locations</div>
+      <div class="dropoff-list">
+        {% for point in how_it_works.collection_points %}
+        <p class="dropoff-name"><strong>{{ point.name }}</strong><br>{{ point.address }}</p>
+        {% if not loop.last %}<div class="dropoff-item-rule"></div>{% endif %}
+        {% endfor %}
+      </div>
     </div>
   </div>
-</div>
-
-<!-- Get involved banner -->
-<div class="involved-banner section-peach">
-  <div class="involved-card">
-    <div class="involved-card-text">Want to get involved and become a dropoff location?</div>
-    <a class="btn-outline-white" href="/get-involved/#businesses">Find out more →</a>
+  <div class="dropoff-cta">
+    <div class="dropoff-cta-text">Want to get involved and become a dropoff location?</div>
+    <a class="dropoff-cta-btn" href="/get-involved/#businesses">Find out more →</a>
   </div>
 </div>
 
@@ -83,10 +83,12 @@ Community&nbsp;&nbsp;<span class="hero-img-inline"><img src="/assets/hero-2.jpg"
 </div>
 
 <!-- Who is this for? -->
-<div class="blue-section">
-  <div class="for-me-header">
-    <span>{{ home.who_heading }}</span>
+<div class="who-section">
+  <div class="who-text">
+    <div class="who-heading">{{ home.who_heading }}</div>
+    <p class="who-body">{{ home.who_text }}</p>
+    <p class="who-body">{{ home.who_sub }}</p>
+    <a class="nav-join-outline" href="/about/">Learn more →</a>
   </div>
-  <p class="for-me-body">{{ home.who_text }}</p>
-  <p class="who-sub">{{ home.who_sub }}</p>
+  <img src="/assets/hero-2.jpg" alt="Sports gear swap community" class="who-img">
 </div>

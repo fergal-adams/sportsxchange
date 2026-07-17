@@ -12,8 +12,10 @@ steps:
     description: "See something you or your child needs? Reply to the post and arrange collection between yourselves. First to reply gets it."
 
 collection_points:
-  - SuperValu Ballybunion
-  - Beale GAA Club
+  - name: SuperValu
+    address: Ballybunion, North Kerry
+  - name: Beale GAA Club
+    address: Beale, North Kerry
 collection_points_note: "Want to become a drop-off point?"
 
 what_can:
