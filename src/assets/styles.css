@@ -99,17 +99,17 @@ nav.nav-green .nav-links a { color: var(--peach); }
   align-items: center;
   gap: 10px;
   padding: 16px 28px;
-  background: var(--plum);
+  background: transparent;
   border: 2px solid var(--plum);
   border-radius: 100px;
   font-size: 18px;
   font-weight: 500;
-  color: var(--white);
+  color: var(--plum);
   white-space: nowrap;
-  transition: opacity 0.15s;
+  transition: background 0.15s, color 0.15s;
 }
 
-.nav-join-outline:hover { opacity: 0.75; }
+.nav-join-outline:hover { background: var(--plum); color: var(--white); }
 
 .nav-hamburger {
   display: none;
@@ -220,19 +220,19 @@ nav.nav-green .nav-links a { color: var(--peach); }
   align-items: center;
   gap: 10px;
   padding: 16px 24px;
-  background: var(--plum);
+  background: transparent;
   border: 2px solid var(--plum);
   border-radius: 100px;
   font-family: 'Inclusive Sans', sans-serif;
   font-size: 18px;
   font-weight: 500;
-  color: var(--white);
+  color: var(--plum);
   white-space: nowrap;
-  transition: opacity 0.15s;
+  transition: background 0.15s, color 0.15s;
   align-self: flex-start;
 }
 
-.btn-whatsapp:hover { opacity: 0.75; }
+.btn-whatsapp:hover { background: var(--plum); color: var(--white); }
 
 .steps-headline {
   font-family: 'Barlow Semi Condensed', sans-serif;
@@ -435,56 +435,50 @@ nav.nav-green .nav-links a { color: var(--peach); }
 /* ===== DROPOFF LOCATIONS ===== */
 .dropoff-section {
   background: var(--cream);
-  padding: 40px 100px;
+  padding: 80px 100px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  align-items: center;
+  gap: 56px;
 }
 
-.dropoff-top {
+.dropoff-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.dropoff-card {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 20px;
 }
 
-.dropoff-rule {
-  height: 3px;
-  background: var(--plum);
-}
-
-.dropoff-inner {
+.dropoff-card-logo {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: var(--white);
+  border-radius: 12px;
   display: flex;
-  gap: 48px;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.dropoff-heading {
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 40px;
-  letter-spacing: -0.01em;
-  text-transform: uppercase;
+.dropoff-card-logo img {
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+}
+
+.dropoff-card-name {
+  font-size: 20px;
+  line-height: 28px;
   color: var(--plum);
-  flex: 0 0 300px;
+  white-space: pre-line;
 }
-
-.dropoff-list {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.dropoff-name {
-  font-size: 24px;
-  line-height: 32px;
-  color: var(--plum);
-}
-
-.dropoff-name strong { font-weight: 700; }
-
-.dropoff-item-rule { height: 3px; background: var(--plum); }
 
 .dropoff-cta {
   background: var(--plum);
@@ -665,10 +659,12 @@ footer {
 .btn-green { background: var(--green); color: var(--peach); }
 .btn-plum  { background: var(--plum); color: var(--white); }
 .btn-outline-plum {
-  background: var(--plum);
+  background: transparent;
   border: 2px solid var(--plum);
-  color: var(--white);
+  color: var(--plum);
+  transition: background 0.15s, color 0.15s;
 }
+.btn-outline-plum:hover { background: var(--plum); color: var(--white); }
 
 /* ===== CENTERED SECTION HEADINGS WITH ELLIPSES ===== */
 .steps-headline-centered {

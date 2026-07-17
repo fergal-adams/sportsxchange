@@ -13,9 +13,14 @@ steps:
 
 collection_points:
   - name: SuperValu
-    address: Ballybunion, North Kerry
+    address: "Ballybunion,\nNorth Kerry"
+    logo: ""
   - name: Beale GAA Club
-    address: Beale, North Kerry
+    address: "Ballybunion,\nNorth Kerry"
+    logo: ""
+  - name: Ballybunion Health & Leisure Centre
+    address: "Ballybunion,\nNorth Kerry"
+    logo: ""
 collection_points_note: "Want to become a drop-off point?"
 
 what_can:

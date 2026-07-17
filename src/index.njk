@@ -63,17 +63,22 @@ navBg: peach
 
 <!-- Drop-off locations -->
 <div class="dropoff-section">
-  <div class="dropoff-top">
-    <div class="dropoff-rule"></div>
-    <div class="dropoff-inner">
-      <div class="dropoff-heading">Dropoff<br>Locations</div>
-      <div class="dropoff-list">
-        {% for point in how_it_works.collection_points %}
-        <p class="dropoff-name"><strong>{{ point.name }}</strong><br>{{ point.address }}</p>
-        {% if not loop.last %}<div class="dropoff-item-rule"></div>{% endif %}
-        {% endfor %}
+  <div class="how-heading-row">
+    <img src="/assets/ellipse-stroke.svg" class="section-ellipse" alt="" aria-hidden="true">
+    <div class="how-heading">DROP OFF POINTS</div>
+    <img src="/assets/ellipse-stroke-2.svg" class="section-ellipse" alt="" aria-hidden="true">
+  </div>
+  <div class="dropoff-cards">
+    {% for point in how_it_works.collection_points %}
+    <div class="dropoff-card">
+      <div class="dropoff-card-logo">
+        {% if point.logo %}
+        <img src="{{ point.logo }}" alt="{{ point.name }} logo">
+        {% endif %}
       </div>
+      <p class="dropoff-card-name">{{ point.name }}<br>{{ point.address }}</p>
     </div>
+    {% endfor %}
   </div>
   <div class="dropoff-cta">
     <div class="dropoff-cta-text">Want to get involved and become a dropoff location?</div>
