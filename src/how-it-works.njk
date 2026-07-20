@@ -3,113 +3,83 @@ layout: base.njk
 pageTitle: "How it works"
 pageDescription: "How to join, post items, browse, and collect through Sportswear X-Change."
 navActive: how
-navBg: peach
 permalink: /how-it-works/
 ---
 
-<!-- Page hero (peach) -->
-<div class="page-hero section-peach">
-  <div class="page-hero-inner">
-    <div class="page-hero-display">How it<br>works.</div>
-    <p class="page-hero-sub">{{ how_it_works.hero_intro }}</p>
+<!-- Hero (blue) -->
+<div class="hiw-hero">
+  <div class="hiw-hero-inner">
+    <div class="hiw-hero-text">
+      <div class="hiw-hero-heading">HOW IT WORKS</div>
+      <p class="hiw-hero-sub">{{ how_it_works.hero_intro }}</p>
+      <a class="btn-whatsapp" href="{{ site.whatsapp_url }}" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg>
+        Join our WhatsApp Group
+      </a>
+    </div>
+    <img src="/assets/hero-1.jpg" alt="Sports gear swap" class="hiw-hero-img js-scroll-tilt">
   </div>
 </div>
 
-<!-- Steps (orange) -->
-<div class="steps-section">
-  <div class="steps-headline-centered">
-    <img src="/assets/ellipse-stroke.svg" class="section-ellipse" alt="" aria-hidden="true">
-    <span>3 simple steps</span>
-    <img src="/assets/ellipse-stroke-2.svg" class="section-ellipse" alt="" aria-hidden="true">
+<!-- 3 simple steps (cream) -->
+<div class="hiw-steps-section">
+  <div class="how-heading-row">
+    <img src="/assets/ellipse-stroke.svg" class="section-ellipse section-ellipse--green" alt="" aria-hidden="true">
+    <div class="how-heading">3 simple steps</div>
+    <img src="/assets/ellipse-stroke-2.svg" class="section-ellipse section-ellipse--green" alt="" aria-hidden="true">
   </div>
-  <div class="steps-list">
+  <div class="hiw-steps-grid">
     {% for step in how_it_works.steps %}
-    <div class="step-item">
-      <div class="step-rule"></div>
-      <div class="step-row">
-        <span class="step-num">0{{ step.num }}.</span>
-        <div class="step-body">
-          <div class="step-title">{{ step.title }}</div>
-          <p class="step-desc">{{ step.description }}</p>
-        </div>
-      </div>
+    <div class="hiw-step-col">
+      <span class="hiw-step-num">0{{ step.num }}</span>
+      <div class="hiw-step-title">{{ step.title }}</div>
+      <p class="hiw-step-desc">{{ step.description }}</p>
     </div>
     {% endfor %}
-    <div class="step-rule"></div>
   </div>
+</div>
 
-  <div class="steps-cta">
-    <div class="steps-cta-text">Scan the code to join our WhatsApp!</div>
-    <div class="steps-cta-right">
-      <img src="/assets/qrcode.png" alt="Scan to join WhatsApp group" class="qr-code">
-      <a class="nav-join-outline" href="{{ site.whatsapp_url }}" target="_blank" rel="noopener">Join our WhatsApp Group</a>
+<!-- Drop-off points (blue-tint) -->
+<div class="hiw-dropoff-section">
+  <div class="how-heading-row">
+    <img src="/assets/ellipse-stroke.svg" class="section-ellipse section-ellipse--green" alt="" aria-hidden="true">
+    <div class="how-heading">DROP OFF POINTS</div>
+    <img src="/assets/ellipse-stroke-2.svg" class="section-ellipse section-ellipse--green" alt="" aria-hidden="true">
+  </div>
+  <p class="hiw-dropoff-intro">Items can be dropped off and collected at the following locations:</p>
+  <div class="dropoff-cards">
+    {% for point in how_it_works.collection_points %}
+    <div class="dropoff-card">
+      <div class="dropoff-card-logo">
+        {% if point.logo %}
+        <img src="{{ point.logo }}" alt="{{ point.name }} logo">
+        {% endif %}
+      </div>
+      <p class="dropoff-card-name">{{ point.name }}<br>{{ point.address }}</p>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="hiw-dropoff-cta">
+    <div class="hiw-dropoff-cta-inner">
+      <div class="dropoff-cta-text">Want to get involved and become a dropoff location?</div>
+      <a class="hiw-dropoff-cta-btn" href="/get-involved/#businesses">Find out more →</a>
     </div>
   </div>
 </div>
 
-<!-- Drop-off locations (peach) -->
-<div class="locations-section section-peach">
-  <div class="locations-rule"></div>
-  <div class="locations-inner">
-    <div class="locations-heading">Dropoff locations</div>
-    <div class="locations-list">
-      {% for point in how_it_works.collection_points %}
-      <div class="location-name">{{ point }}</div>
-      <div class="location-rule"></div>
-      {% endfor %}
-      <p class="t-body">{{ how_it_works.collection_points_note }} <a href="/get-involved/#businesses" style="text-decoration:underline;">Get in touch</a></p>
-    </div>
+<!-- FAQs (cream) -->
+<div class="hiw-faq-section">
+  <div class="how-heading-row">
+    <img src="/assets/ellipse-stroke.svg" class="section-ellipse section-ellipse--green" alt="" aria-hidden="true">
+    <div class="how-heading">FAQs</div>
+    <img src="/assets/ellipse-stroke-2.svg" class="section-ellipse section-ellipse--green" alt="" aria-hidden="true">
   </div>
-</div>
-
-<!-- Get involved banner (peach) -->
-<div class="involved-banner section-peach">
-  <div class="involved-card">
-    <div class="involved-card-text">Want to get involved and become a dropoff location?</div>
-    <a class="btn-outline-white" href="/get-involved/#businesses">Find out more →</a>
-  </div>
-</div>
-
-<!-- What can / can't / community rules (orange) -->
-<div class="section-orange section-inner">
-  <div class="step-rule" style="background:var(--plum)"></div>
-  <div class="step-row" style="align-items:flex-start">
-    <div style="flex:0 0 300px">
-      <div class="t-display" style="color:var(--plum)">What can be swapped</div>
-    </div>
-    <ul style="flex:1;list-style:none;display:flex;flex-direction:column;gap:8px;">
-      {% for item in how_it_works.what_can %}
-      <li class="t-body" style="color:var(--plum)">— {{ item }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-  <div class="step-rule" style="background:var(--plum)"></div>
-  <div class="step-row" style="align-items:flex-start">
-    <div style="flex:0 0 300px">
-      <div class="t-display" style="color:var(--plum)">What can't be swapped</div>
-    </div>
-    <ul style="flex:1;list-style:none;display:flex;flex-direction:column;gap:8px;">
-      {% for item in how_it_works.what_cannot %}
-      <li class="t-body" style="color:var(--plum)">— {{ item }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-  <div class="step-rule" style="background:var(--plum)"></div>
-</div>
-
-<!-- FAQs (blue) -->
-<div class="section-blue section-inner">
-  <div class="steps-headline-centered">
-    <img src="/assets/ellipse-stroke.svg" class="section-ellipse" alt="" aria-hidden="true">
-    <span>FAQs</span>
-    <img src="/assets/ellipse-stroke-2.svg" class="section-ellipse" alt="" aria-hidden="true">
-  </div>
-  <div style="display:flex;flex-direction:column;gap:0;">
+  <div class="hiw-faq-list">
     {% for faq in how_it_works.faqs %}
-    <div class="faq-item">
-      <div class="faq-q">{{ faq.q }}</div>
+    <details class="faq-item">
+      <summary class="faq-q">{{ faq.q }}</summary>
       <p class="faq-a">{{ faq.a }}</p>
-    </div>
+    </details>
     {% endfor %}
   </div>
 </div>
