@@ -4,14 +4,16 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --peach:  #FED2CC;
-  --cream:  #FFF8EF;
-  --orange: #FFB94A;
-  --blue:   #49C6FF;
-  --green:  #097C01;
-  --plum:   #382132;
-  --white:  #ffffff;
-  --grey:   #D9D9D9;
+  --peach:      #FED2CC;
+  --cream:      #FFF8EF;
+  --orange:     #FFB94A;
+  --blue:       #49C6FF;
+  --light-blue: #CBEFFF;
+  --sand:       #F5E2C8;
+  --green:      #097C01;
+  --plum:       #221F20;
+  --white:      #ffffff;
+  --grey:       #D9D9D9;
   --pad: 40px;
 }
 
@@ -307,7 +309,7 @@ nav.nav-green .nav-links a { color: var(--peach); }
 }
 
 .how-section {
-  background: var(--blue);
+  background: var(--light-blue);
   padding: 80px 40px;
   display: flex;
   flex-direction: column;
@@ -422,14 +424,51 @@ nav.nav-green .nav-links a { color: var(--peach); }
   color: var(--plum);
 }
 
-.who-img {
+.who-img-wrap {
   flex: 1;
   min-width: 0;
-  max-width: 527px;
+  max-width: 558px;
+  position: relative;
+}
+
+.who-img {
+  width: 100%;
   height: auto;
-  aspect-ratio: 527 / 399;
+  aspect-ratio: 558 / 444;
   object-fit: cover;
   border-radius: 10px;
+}
+
+/* WHO attribution card */
+.who-card {
+  position: absolute;
+  bottom: -30px;
+  right: -20px;
+  width: 340px;
+  background: var(--sand);
+  border-radius: 10px;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.who-card-text {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--plum);
+}
+
+.who-card-logos {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.who-card-logos img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
 }
 
 /* ===== DROPOFF LOCATIONS ===== */
@@ -552,7 +591,7 @@ nav.nav-green .nav-links a { color: var(--peach); }
 
 /* ===== FOOTER ===== */
 footer {
-  background: var(--green);
+  background: var(--blue);
   padding: 48px 40px 0;
   display: flex;
   flex-direction: column;
@@ -832,6 +871,7 @@ footer {
 /* Hero */
 .hiw-hero {
   background: var(--blue);
+  /* blue kept for inner page hero — homepage how-section uses light-blue */
   padding: clamp(60px, 10vw, 120px) clamp(40px, 7vw, 100px);
 }
 
@@ -1040,6 +1080,153 @@ details[open] .faq-q::after {
   filter: hue-rotate(0deg);
 }
 
+/* ===== WHY THIS MATTERS PAGE ===== */
+
+.wtm-hero {
+  background: var(--blue);
+  padding: clamp(60px, 10vw, 120px) clamp(40px, 7vw, 100px);
+}
+
+.wtm-hero-inner {
+  display: flex;
+  align-items: center;
+  gap: clamp(40px, 7vw, 100px);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wtm-hero-text {
+  flex: 0 0 clamp(280px, 45vw, 590px);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.wtm-hero-heading {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: clamp(48px, 6vw, 74px);
+  font-weight: 700;
+  line-height: 0.89;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--plum);
+}
+
+.wtm-hero-sub {
+  font-size: clamp(18px, 1.8vw, 25px);
+  line-height: 1.4;
+  color: var(--plum);
+}
+
+.wtm-hero-img {
+  flex: 1;
+  min-width: 0;
+  max-width: 518px;
+  aspect-ratio: 518/397;
+  object-fit: cover;
+  border-radius: 10px;
+  transform: rotate(0deg);
+  transition: transform 0.1s linear;
+  will-change: transform;
+}
+
+/* Cards section */
+.wtm-cards-section {
+  background: var(--light-blue);
+  padding: clamp(60px, 10vw, 120px) clamp(40px, 7vw, 100px);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 100%;
+}
+
+.wtm-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.wtm-card-img {
+  width: 100%;
+  aspect-ratio: 321/251;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.wtm-card-title {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: clamp(24px, 2.5vw, 34px);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  color: var(--plum);
+}
+
+.wtm-card-text {
+  font-size: clamp(16px, 1.5vw, 20px);
+  line-height: 1.5;
+  color: var(--plum);
+}
+
+/* Accordion section */
+.wtm-accordion-section {
+  background: var(--cream);
+  padding: clamp(60px, 10vw, 120px) clamp(40px, 7vw, 100px);
+  max-width: 100%;
+  border-top: 3px solid var(--plum);
+}
+
+.wtm-accordion-item {
+  border-bottom: 3px solid var(--plum);
+}
+
+.wtm-accordion-heading {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: clamp(32px, 4vw, 56px);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  color: var(--plum);
+  padding: 32px 0;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.wtm-accordion-heading::-webkit-details-marker { display: none; }
+
+.wtm-accordion-heading::after {
+  content: '+';
+  font-size: 40px;
+  font-weight: 400;
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+
+details[open] .wtm-accordion-heading::after {
+  transform: rotate(45deg);
+}
+
+.wtm-accordion-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 40px;
+  max-width: 800px;
+  font-size: clamp(16px, 1.5vw, 20px);
+  line-height: 1.6;
+  color: var(--plum);
+}
+
+.wtm-sdg-wheel {
+  max-width: 400px;
+  height: auto;
+  margin-top: 16px;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 860px) {
   :root { --pad: 20px; }
@@ -1083,4 +1270,23 @@ details[open] .faq-q::after {
   .footer-top { flex-direction: column; gap: 32px; }
 
   .photo-tile { width: 72px; height: 72px; }
+
+  /* Who section */
+  .who-section { flex-direction: column; }
+  .who-img-wrap { width: 100%; max-width: 100%; }
+  .who-card { position: static; width: 100%; margin-top: 16px; }
+
+  /* HIW page */
+  .hiw-hero-inner { flex-direction: column; }
+  .hiw-hero-img { max-width: 100%; }
+  .hiw-steps-grid { grid-template-columns: 1fr; }
+  .hiw-dropoff-cta-inner { flex-direction: column; align-items: flex-start; }
+
+  /* WTM page */
+  .wtm-hero-inner { flex-direction: column; }
+  .wtm-hero-img { max-width: 100%; }
+  .wtm-cards-section { grid-template-columns: 1fr; }
+
+  /* Dropoff cards */
+  .dropoff-cards { grid-template-columns: 1fr; }
 }

@@ -1,24 +1,25 @@
-story:
-  - "North Kerry has fantastic sports clubs and passionate young athletes. But sports can be expensive. Children grow fast and kits that fit one year are too small the next. Good quality gear ends up idling in cupboards, without maximising its extra value."
-  - "Sports X Change started with a simple idea: what if families could share? What if outgrown gear could find a new player instead of going to waste?"
-  - "We're starting in North Kerry to prove this works. Our goal is to remove cost as a barrier to sport, reduce waste and strengthen community."
+hero_intro: "Sports X Change isn't just about free gear. It's about changing how we think about the things we use — keeping them in play for as long as possible, reducing production & consumption, and building stronger communities along the way."
 
 cards:
   - title: For families
+    image: /assets/image-03.jpg
     text: "Parents are hard pressed financially with the demands of growing children and the ongoing need for replacing outgrown sports gear. Sport keeps everyone healthy and happy, but cost shouldn't be a barrier. Sports X Change makes participation affordable for everyone — find clean, nearly new gear for free, and pass it on again when it's outgrown."
   - title: For the environment
+    image: /assets/image-04.jpg
     text: "Every item that stays in use promotes sustainability and reduces negative environmental impacts. Fibre production has more than doubled in 25 years, and Ireland is among the highest consumers of textiles in Europe — the average Irish person generates over 53kg of textile waste each year. By keeping gear in circulation, we reduce waste, cut demand for new production, and lower the emissions that go with it."
   - title: For community
+    image: /assets/image-05.jpg
     text: "This is about neighbours and communities helping each other out. It's the principle that makes North Kerry's sports clubs work. SportsXChange extends that spirit — creating added value through good health, wellbeing and full participation in sport for everyone, ensuring that socio-economic circumstances are never a barrier."
 
-sdg_heading: "The Circular Economy"
-sdg_text:
+circular_economy_heading: "The Circular Economy"
+circular_economy_text:
   - "SportsXChange is a circular economy initiative. Instead of the traditional \"make, use, throw away\" cycle, we're creating a closed loop where nearly new, outgrown sportswear is available for free — to use and return when outgrown. This extends the life of every item, closes the loop, and keeps gear in use for as long as possible, supporting connected, inclusive, and resilient communities."
   - "The circular economy is a system where waste and pollution are eliminated, and products and materials maintain the highest possible value through reuse, repair, recycling or composting. This shifts the focus from continuously extracting resources and producing disposable products, reducing pressures on nature and allowing it to thrive and regenerate."
   - "The shift to a circular economy makes both environmental and economic sense. In a circular economy, growth no longer requires increasing extraction and consumption of resources, energy, water, and raw materials. Climate action at the individual level involves changing habits and making choices that have less harmful effects on the environment. That's exactly what SportsXChange does — one jersey or sports kit at a time."
 
-nkef_heading: "About NKEF"
-nkef_text:
-  - "Ballybunion North Kerry Environmental Forum (NKEF) is a voluntary environmental group founded in 2007, dedicated to community, the natural environment, and positive action on all environmental matters."
-  - "NKEF works across sustainable development, climate action, circular economy, social justice, global citizenship education, ocean literacy, and the Social Development Goals — putting people and planet first, thinking global and acting local. For more on our sustainability work and SDG resources, visit our Facebook page here."
-  - "SportsXChange is an initiative of Ballybunion NKEF. We are happy to have been awarded a Circular Communications Grant as part of Circular.ie's programme, supporting organisations across Ireland to amplify the impact of their circular economy initiatives."
+eu_policy_heading: "EU Policy Context"
+eu_policy_text: "The EU is translating these principles into legislation. The Circular Economy Action Plan, part of the European Green Deal, aims to reduce waste, promote recycling and circular business models, and strengthen sustainable supply of raw materials. Sustainability requirements will apply to virtually all physical goods placed on the EU market — significantly curtailing the \"take, make and throw away\" model across almost all product categories, not just textiles."
+
+sdg_heading: "SDGs"
+sdg_text: "SportsXChange directly links with SDG 12 (Responsible Consumption and Production). Sustainable Development Goal 12 is about ensuring sustainable consumption and production patterns, which is key to sustaining the livelihoods of current and future generations."
+sdg_also: "The initiative also supports the principles underpinning SDG 3 (Good Health and Wellbeing), SDG 4 (Quality Education), SDG 9 (Industry, Innovation and Infrastructure), SDG 10 (Reduced Inequalities), SDG 11 (Sustainable Cities and Communities), SDG 13 (Climate Action), and SDG 17 (Partnerships for the Goals) — acknowledging that all of the SDGs are interlinked."

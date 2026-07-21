@@ -1,0 +1,59 @@
+---
+layout: base.njk
+pageTitle: "Why This Matters"
+pageDescription: "Why Sports X Change matters — for families, the environment, and community in North Kerry."
+navActive: why
+permalink: /why-this-matters/
+---
+
+<!-- Hero (blue) -->
+<div class="wtm-hero">
+  <div class="wtm-hero-inner">
+    <div class="wtm-hero-text">
+      <div class="wtm-hero-heading">WHY THIS MATTERS</div>
+      <p class="wtm-hero-sub">{{ why_this_matters.hero_intro }}</p>
+    </div>
+    <img src="/assets/image-06.jpg" alt="Sports gear swap" class="wtm-hero-img js-scroll-tilt">
+  </div>
+</div>
+
+<!-- 3 cards (light-blue) -->
+<div class="wtm-cards-section">
+  {% for card in why_this_matters.cards %}
+  <div class="wtm-card">
+    <img src="{{ card.image }}" alt="{{ card.title }}" class="wtm-card-img">
+    <div class="wtm-card-body">
+      <div class="wtm-card-title">{{ card.title }}</div>
+      <p class="wtm-card-text">{{ card.text }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<!-- Accordion sections (cream) -->
+<div class="wtm-accordion-section">
+  <details class="wtm-accordion-item">
+    <summary class="wtm-accordion-heading">{{ why_this_matters.circular_economy_heading }}</summary>
+    <div class="wtm-accordion-body">
+      {% for para in why_this_matters.circular_economy_text %}
+      <p>{{ para }}</p>
+      {% endfor %}
+    </div>
+  </details>
+
+  <details class="wtm-accordion-item">
+    <summary class="wtm-accordion-heading">{{ why_this_matters.eu_policy_heading }}</summary>
+    <div class="wtm-accordion-body">
+      <p>{{ why_this_matters.eu_policy_text }}</p>
+    </div>
+  </details>
+
+  <details class="wtm-accordion-item">
+    <summary class="wtm-accordion-heading">{{ why_this_matters.sdg_heading }}</summary>
+    <div class="wtm-accordion-body">
+      <p>{{ why_this_matters.sdg_text }}</p>
+      <p>{{ why_this_matters.sdg_also }}</p>
+      <img src="/assets/images/SportsXChange_SVG_Colour_Wheel.png" alt="SDG colour wheel" class="wtm-sdg-wheel">
+    </div>
+  </details>
+</div>

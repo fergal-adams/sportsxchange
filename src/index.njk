@@ -65,7 +65,7 @@ navBg: peach
 <div class="dropoff-section">
   <div class="how-heading-row">
     <img src="/assets/ellipse-stroke.svg" class="section-ellipse" alt="" aria-hidden="true">
-    <div class="how-heading">DROP OFF POINTS</div>
+    <div class="how-heading">PICK-UP POINTS</div>
     <img src="/assets/ellipse-stroke-2.svg" class="section-ellipse" alt="" aria-hidden="true">
   </div>
   <div class="dropoff-cards">
@@ -81,7 +81,7 @@ navBg: peach
     {% endfor %}
   </div>
   <div class="dropoff-cta">
-    <div class="dropoff-cta-text">Want to get involved and become a dropoff location?</div>
+    <div class="dropoff-cta-text">Want to get involved and become a pick-up point?</div>
     <a class="dropoff-cta-btn" href="/get-involved/#businesses">Find out more →</a>
   </div>
 </div>
@@ -92,7 +92,15 @@ navBg: peach
     <div class="who-heading">{{ home.who_heading }}</div>
     <p class="who-body">{{ home.who_text }}</p>
     <p class="who-body">{{ home.who_sub }}</p>
-    <a class="nav-join-outline" href="/about/">Learn more →</a>
+    <a class="nav-join-outline" href="/about/">Learn more about us →</a>
   </div>
-  <img src="/assets/hero-2.jpg" alt="Sports gear swap community" class="who-img js-scroll-tilt">
+  <div class="who-img-wrap">
+    <img src="/assets/hero-2.jpg" alt="Sports gear swap community" class="who-img js-scroll-tilt">
+    <div class="who-card">
+      <p class="who-card-text">{{ home.who_attribution }}</p>
+      <div class="who-card-logos">
+        <img src="/assets/logo-nkef.png" alt="North Kerry Environmental Forum">
+      </div>
+    </div>
+  </div>
 </div>

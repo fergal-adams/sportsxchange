@@ -1,4 +1,4 @@
-hero_intro: "It's simple — join our WhatsApp group, post what you have or find what you need, and arrange collection at a local drop-off point."
+hero_intro: "It's simple — join our WhatsApp group, post what you have or find what you need, and arrange collection at a local pick-up point."
 
 steps:
   - num: 1
@@ -6,22 +6,22 @@ steps:
     description: "Scan the QR code on this site or tap the join button to request access to our WhatsApp group. We'll add you to the community."
   - num: 2
     title: Post items
-    description: "Take a photo of the item and post it in the group with a few details — what it is, the size, condition, and where you can drop off or collect. For example: \"Size 5 Adidas football boots, good condition, some scuff marks. Can drop to SuperValu Ballybunion.\""
+    description: "Take a photo of the item and post it in the group with a few details — what it is, the size, condition, and where you can pick up or collect. For example: \"Age 7-9 football jersey, excellent condition. Can collect from SuperValu Ballybunion.\""
   - num: 3
     title: Claim and collect
-    description: "See something you or your child needs? Reply to the post and arrange collection between yourselves. First to reply gets it."
+    description: "See something you or your child needs? Reply to the post and arrange collection between yourselves at a suitable location. First to reply secures the item."
 
 collection_points:
   - name: SuperValu
     address: "Ballybunion,\nNorth Kerry"
-    logo: ""
+    logo: "/assets/logo-supervalu.png"
   - name: Beale GAA Club
     address: "Ballybunion,\nNorth Kerry"
-    logo: ""
-  - name: Ballybunion Health & Leisure Centre
+    logo: "/assets/logo-beale-gaa.png"
+  - name: Ballybunion Community Centre
     address: "Ballybunion,\nNorth Kerry"
-    logo: ""
-collection_points_note: "Want to become a drop-off point?"
+    logo: "/assets/logo-ballybunion-cc.png"
+collection_points_note: "Want to become a pick-up point?"
 
 what_can:
   - Sportswear in good condition
@@ -46,7 +46,7 @@ faqs:
   - q: How do I claim an item?
     a: "Reply to the post in the WhatsApp group and arrange collection between yourselves. First to reply gets it."
   - q: Where do I collect or drop off items?
-    a: "We have drop-off points at SuperValu Ballybunion and Beale GAA Club. Please use these public locations rather than sharing home addresses."
+    a: "We have pick-up points at SuperValu Ballybunion, Beale GAA Club, and Ballybunion Community Centre. Please use these public locations rather than sharing home addresses."
   - q: What if the size isn't right?
     a: "No problem — swap it for something else from the group, or return it to the original poster."
   - q: How long are items available?

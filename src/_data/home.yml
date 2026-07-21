@@ -14,8 +14,9 @@ steps:
     description: Post items you or your child have outgrown, or browse what others are sharing.
   - num: 3
     title: Drop or Collect
-    description: Arrange pickup at one of our trusted local drop-off points listed below.
+    description: Arrange pickup at one of our trusted local pick-up points listed below.
 
 who_heading: "WHO IS SPORTS X CHANGE FOR?"
-who_text: "This project is for everyone: families with kids who play sports. Sports clubs looking to reduce costs. And anyone with good-quality gear they've outgrown. The more people join, the more gear we can keep going — so please spread the word!"
-who_sub: "Sports X Change is a project from North Kerry Environmental Forum. It is supported by Circular.ie"
+who_text: "This initiative is for everyone: families with kids who play sports, sports clubs looking to reduce costs, and anyone with good-quality gear they've outgrown. The more people join, the more gear we can keep going — so please spread the word!"
+who_sub: "When you get an item, use it for as long as you need. When it's outgrown, upload it again so someone else can benefit. 'Closing the Loop' — keeping gear in play and circular."
+who_attribution: "SportsXChange is an initiative of Ballybunion - North Kerry Environmental Forum. It is supported by Circular.ie. Communication grant & NKEF"
