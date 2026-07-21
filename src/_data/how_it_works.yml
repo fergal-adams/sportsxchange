@@ -21,39 +21,30 @@ collection_points:
   - name: Ballybunion Community Centre
     address: "Ballybunion,\nNorth Kerry"
     logo: "/assets/logo-ballybunion-cc.png"
-collection_points_note: "Want to become a pick-up point?"
 
-what_can:
-  - Sportswear in good condition
-  - Sports equipment (boots, hurls, bats, etc.)
-  - Kits and uniforms
-  - Trainers, shin guards, and protective gear
-
-what_cannot:
-  - Damaged or worn-out items
-  - Non-sports clothing
-  - Items with missing pieces
-
-community_rules: "Be respectful and reliable. Arrange collection within 48 hours. Treat items with care. Give accurate descriptions of condition."
+keep_circle_heading: "Keep the circle going"
+keep_circle_text: "When you pick up an item, use it for as long as you need. When it's outgrown or no longer needed, clean it up and post it back on the group for someone else. That's how we keep good gear going — extending the life of every item and making sure nothing ends up in a cupboard or out of use, when it still has life left in it."
 
 faqs:
   - q: What can I post?
-    a: "Any sports gear in good, clean condition. This includes but isn't limited to: jerseys, kits, shorts, tracksuits, boots, trainers, shin guards, helmets, hurls, tennis rackets, golf clubs, wetsuits, surfboards, gym equipment, yoga mats, cycling gear, swimming goggles — if it's used for sport or exercise and it's still in good nick, it's welcome."
+    a: "Any sports gear in good, clean condition — if it's used for sport or exercise and it's still in good nick, it's welcome."
   - q: What shouldn't be posted?
     a: "Anything damaged, stained, or heavily worn. Non-sports items. Items with missing parts."
   - q: Can I join if I have nothing to give yet?
     a: "Absolutely. Take what you need. When you have something to pass on, post it."
   - q: How do I claim an item?
-    a: "Reply to the post in the WhatsApp group and arrange collection between yourselves. First to reply gets it."
-  - q: Where do I collect or drop off items?
+    a: "Reply to the post in the WhatsApp group and arrange collection between yourselves. First to reply secures the item."
+  - q: Where do I pick up or collect items?
     a: "We have pick-up points at SuperValu Ballybunion, Beale GAA Club, and Ballybunion Community Centre. Please use these public locations rather than sharing home addresses."
   - q: What if the size isn't right?
-    a: "No problem — swap it for something else from the group, or return it to the original poster."
+    a: "No problem — post it back on the group for someone else, or return it to the original poster."
   - q: How long are items available?
     a: "Until someone claims them. If unclaimed after a month, the person who posted can remove them."
   - q: Is this just for children's gear?
     a: "No — adults are welcome too. If you've got gear you no longer use, someone else probably needs it."
   - q: Do I have to swap? Can I just give stuff away?
-    a: "Yes! There's no obligation to take something in return. If you just want to pass things on, that's brilliant."
+    a: "Yes! There's no obligation to take something in return. If you just want to pass things on, that's excellent."
   - q: Who manages this?
-    a: "Sportswear X-Change is run by North Kerry Environmental Forum with support from the community."
+    a: "SportsXChange is run by North Kerry Environmental Forum with support from the community."
+  - q: I have a question that isn't answered here.
+    a: "Get in touch at northkerryenvironmentalforum@gmail.com and we'll help you out."

@@ -56,7 +56,7 @@ nav {
   border-radius: 100px;
   flex: 1;
   min-width: 0;
-  background: var(--peach);
+  background: transparent;
 }
 
 .nav-logo-link { display: flex; align-items: center; }
@@ -130,6 +130,9 @@ nav.nav-green .nav-links a { color: var(--peach); }
   background: var(--plum);
   border-radius: 2px;
 }
+
+/* Nav background override */
+#nav { background: var(--blue); }
 
 /* ===== HERO ===== */
 .hero-section {
@@ -1053,9 +1056,54 @@ footer {
   color: #069BDF;
 }
 
+/* Keep the circle going */
+.hiw-circle-section {
+  background: var(--cream);
+  padding: clamp(60px, 10vw, 120px) clamp(40px, 7vw, 100px);
+}
+
+.hiw-circle-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.hiw-circle-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.hiw-circle-heading {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: clamp(48px, 5vw, 74px);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--plum);
+}
+
+.hiw-circle-body {
+  font-size: clamp(16px, 1.5vw, 20px);
+  line-height: 1.5;
+  color: var(--plum);
+}
+
+.hiw-circle-img {
+  flex: 1;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
 /* FAQs */
 .hiw-faq-section {
-  background: var(--cream);
+  background: var(--light-blue);
   padding: clamp(60px, 10vw, 120px) clamp(40px, 7vw, 100px);
   display: flex;
   flex-direction: column;
