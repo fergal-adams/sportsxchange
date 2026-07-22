@@ -7,16 +7,16 @@ navBg: peach
 permalink: /get-involved/
 ---
 
-<!-- Page hero (peach) -->
-<div class="page-hero section-peach">
+<!-- Page hero (light blue) -->
+<div class="page-hero" style="background: var(--light-blue)">
   <div class="page-hero-inner">
     <div class="page-hero-display">Get<br>involved.</div>
     <p class="page-hero-sub">Whether you're a family, a sports club, or a local business — there's a role for you.</p>
   </div>
 </div>
 
-<!-- Main content (peach) -->
-<div class="section-peach" style="padding: 0 var(--pad) 80px;">
+<!-- Main content (light blue) -->
+<div style="background: var(--light-blue); padding: 0 var(--pad) 80px;">
 
   <!-- Join the swap -->
   <div class="gi-section" id="families">
@@ -27,7 +27,6 @@ permalink: /get-involved/
         <p class="t-body" style="color:var(--plum)">{{ get_involved.join_text }}</p>
         <div style="display:flex;gap:16px;flex-wrap:wrap;">
           <a class="btn btn-plum" href="{{ site.whatsapp_url }}" target="_blank" rel="noopener">Join the WhatsApp group</a>
-          <a class="btn btn-outline-plum" href="#">Download our flyer</a>
         </div>
       </div>
     </div>
@@ -49,7 +48,7 @@ permalink: /get-involved/
   <div class="gi-section" id="businesses">
     <div class="step-rule"></div>
     <div class="step-row" style="align-items:flex-start;padding:32px 0;">
-      <div class="t-display gi-label" style="color:var(--plum)">For businesses</div>
+      <div class="t-display gi-label" style="color:var(--plum)">For businesses and community spaces</div>
       <div style="flex:1;display:flex;flex-direction:column;gap:20px;">
         <p class="t-body" style="color:var(--plum)">{{ get_involved.businesses_text }}</p>
         <p class="t-body" style="color:var(--plum)">Get in touch: <a href="mailto:{{ site.email }}" style="text-decoration:underline">{{ site.email }}</a></p>
@@ -64,7 +63,7 @@ permalink: /get-involved/
       <div class="t-display gi-label" style="color:var(--plum)">Spread the word</div>
       <div style="flex:1;display:flex;flex-direction:column;gap:24px;">
         <p class="t-body" style="color:var(--plum)">{{ get_involved.spread_word }}</p>
-        <div><a class="btn btn-outline-plum" href="#">Download our flyer</a></div>
+        <div><a class="btn btn-outline-plum" href="#">Download our flyer →</a></div>
       </div>
     </div>
   </div>
@@ -74,7 +73,7 @@ permalink: /get-involved/
     <div class="step-rule"></div>
     <div class="step-row" style="align-items:flex-start;padding:32px 0;">
       <div class="t-display gi-label" style="color:var(--plum)">Partners &amp; supporters</div>
-      <div style="flex:1;display:flex;flex-wrap:wrap;gap:16px;">
+      <div style="flex:1;display:flex;flex-wrap:wrap;gap:16px;align-items:center;padding:8px 0;">
         {% for partner in site.partners %}
         <div class="partner-chip">{{ partner }}</div>
         {% endfor %}

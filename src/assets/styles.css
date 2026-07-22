@@ -1019,7 +1019,7 @@ footer {
 
 /* Drop-off section */
 .hiw-dropoff-section {
-  background: rgba(83, 200, 254, 0.3);
+  background: var(--light-blue);
   padding: clamp(60px, 10vw, 120px) clamp(40px, 7vw, 100px);
   display: flex;
   flex-direction: column;
@@ -1040,7 +1040,7 @@ footer {
 }
 
 .hiw-dropoff-cta-inner {
-  background: #069BDF;
+  background: var(--blue);
   border-radius: 10px;
   padding: 20px 40px;
   display: flex;
@@ -1064,7 +1064,7 @@ footer {
 
 .hiw-dropoff-cta-btn:hover {
   background: var(--white);
-  color: #069BDF;
+  color: var(--blue);
 }
 
 /* Keep the circle going */
