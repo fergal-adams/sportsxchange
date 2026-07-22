@@ -488,7 +488,7 @@ nav.nav-green .nav-links a { color: var(--peach); }
 /* ===== DROPOFF LOCATIONS ===== */
 .dropoff-section {
   background: var(--cream);
-  padding: 80px 100px;
+  padding: clamp(60px, 10vw, 120px) clamp(20px, 7vw, 100px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1383,4 +1383,19 @@ details[open] .wtm-accordion-heading::after {
 
   /* Dropoff cards */
   .dropoff-cards { grid-template-columns: 1fr; }
+
+  /* Section heading icons — hide on mobile so headings don't wrap */
+  .section-ellipse { display: none; }
+
+  /* Scan banner — stack vertically */
+  .scan-banner-inner { flex-direction: column; align-items: flex-start; gap: 24px; }
+  .scan-banner-qr { width: 120px; }
+
+  /* Homepage dropoff CTA — stack */
+  .dropoff-cta { flex-direction: column; align-items: flex-start; gap: 20px; padding: 24px; }
+  .dropoff-cta-icon { display: none; }
+
+  /* HIW keep-the-circle section — stack */
+  .hiw-circle-inner { flex-direction: column; gap: 40px; }
+  .hiw-circle-img { max-width: 100%; }
 }
