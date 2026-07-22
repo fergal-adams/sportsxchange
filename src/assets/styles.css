@@ -154,8 +154,16 @@ nav.nav-green .nav-links a { color: var(--peach); }
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 70px;
   width: 100%;
+}
+
+.hero-seam-logo {
+  display: block;
+  width: clamp(80px, 12vw, 160px);
+  height: auto;
+  margin-bottom: calc(-1 * clamp(40px, 6vw, 80px));
+  position: relative;
+  z-index: 1;
 }
 
 .hero-leaf {
@@ -339,9 +347,10 @@ nav.nav-green .nav-links a { color: var(--peach); }
 }
 
 .section-ellipse {
-  width: 39px;
+  width: 56px;
   height: 56px;
   flex-shrink: 0;
+  object-fit: contain;
 }
 
 .how-steps-grid {
@@ -426,6 +435,8 @@ nav.nav-green .nav-links a { color: var(--peach); }
   line-height: 1.33;
   color: var(--plum);
 }
+
+.who-btn { align-self: flex-start; }
 
 .who-img-wrap {
   flex: 1;
@@ -643,7 +654,7 @@ footer {
   gap: 48px;
 }
 
-.footer-logo-img { height: 56px; width: auto; display: block; flex-shrink: 0; }
+.footer-logo-img { height: auto; width: clamp(140px, 18vw, 220px); display: block; flex-shrink: 0; }
 
 .footer-nav {
   flex: 1;
