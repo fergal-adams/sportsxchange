@@ -46,7 +46,6 @@ permalink: /how-it-works/
     <div class="how-heading">PICK-UP POINTS</div>
     <img src="/assets/X_Icon_Blue.svg" class="section-ellipse" alt="" aria-hidden="true">
   </div>
-  <p class="hiw-dropoff-intro">Items can be picked up and collected at the following locations:</p>
   <div class="dropoff-cards">
     {% for point in how_it_works.collection_points %}
     <div class="dropoff-card">
@@ -59,11 +58,10 @@ permalink: /how-it-works/
     </div>
     {% endfor %}
   </div>
-  <div class="hiw-dropoff-cta">
-    <div class="hiw-dropoff-cta-inner">
-      <div class="dropoff-cta-text">Want to get involved and become a pick-up point?</div>
-      <a class="hiw-dropoff-cta-btn" href="/get-involved/#businesses">Find out more →</a>
-    </div>
+  <div class="dropoff-cta">
+    <img src="/assets/infinity-white.svg" alt="" aria-hidden="true" class="dropoff-cta-icon">
+    <div class="dropoff-cta-text">Want to get involved and become a pick-up point?</div>
+    <a class="dropoff-cta-btn" href="/get-involved/">Find out more →</a>
   </div>
 </div>
 
@@ -74,7 +72,10 @@ permalink: /how-it-works/
       <div class="hiw-circle-heading">{{ how_it_works.keep_circle_heading }}</div>
       <p class="hiw-circle-body">{{ how_it_works.keep_circle_text }}</p>
     </div>
-    <img src="/assets/hero-2.jpg" alt="Keep good gear going" class="hiw-circle-img js-scroll-tilt">
+    <div class="hiw-circle-img-wrap">
+      <img src="/assets/X_Icon_Blue.svg" alt="" aria-hidden="true" class="hiw-circle-icon">
+      <img src="/assets/hero-2.jpg" alt="Keep good gear going" class="hiw-circle-img js-scroll-tilt">
+    </div>
   </div>
 </div>
 
