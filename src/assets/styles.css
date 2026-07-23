@@ -60,7 +60,7 @@ nav {
 }
 
 .nav-logo-link { display: flex; align-items: center; }
-.nav-logo-img { height: 18px; width: auto; display: block; max-width: 220px; }
+.nav-logo-img { height: 34px; width: auto; display: block; max-width: 220px; }
 
 .nav-links {
   display: flex;

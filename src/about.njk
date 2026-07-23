@@ -20,17 +20,21 @@ permalink: /about/
   </div>
 </div>
 
-<!-- About NKEF (peach) -->
-<div class="section-peach section-inner">
-  <div class="step-rule" style="background:var(--plum)"></div>
-  <div class="step-row" style="align-items:flex-start">
-    <div class="t-display" style="flex:0 0 300px;color:var(--plum)">About NKEF</div>
-    <div style="flex:1;display:flex;flex-direction:column;gap:20px;">
-      {% for para in about.nkef_text %}
-      <p class="t-body" style="color:var(--plum)">{{ para }}</p>
-      {% endfor %}
-      <div><a class="btn btn-green" href="/why-this-matters/" rel="noopener">Read more about why we're doing this project here →</a></div>
+<!-- About NKEF (cream) -->
+<div class="section-inner" style="background: var(--cream)">
+  <div class="step-row" style="align-items:flex-start;gap:clamp(40px,7vw,100px)">
+    <div style="flex:1;display:flex;flex-direction:column;gap:24px;">
+      <div class="t-display" style="color:var(--plum)">About NKEF</div>
+      <p class="t-body" style="color:var(--plum)">Ballybunion North Kerry Environmental Forum (NKEF) is a voluntary environmental group founded in 2007, dedicated to community, the natural environment, and positive action on all environmental matters.</p>
+      <p class="t-body" style="color:var(--plum)">NKEF works across sustainable development, climate action, circular economy, social justice, global citizenship education, ocean literacy, and the Social Development Goals — putting people and planet first, thinking global and acting local. For more on our sustainability work and SDG resources, <a href="{{ site.facebook_url }}" target="_blank" rel="noopener" style="text-decoration:underline;color:var(--plum)">visit our Facebook page here.</a></p>
+      <p class="t-body" style="color:var(--plum)">SportsXChange is an initiative of Ballybunion NKEF. We are happy to have been awarded a Circular Communications Grant as part of Circular.ie's programme, supporting organisations across Ireland to amplify the impact of their circular economy initiatives.</p>
+      <div style="display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:8px;">
+        <img src="/assets/Circular_Yellow_RGB.svg" alt="Circular.ie" style="height:40px;width:auto;">
+      </div>
+      <a class="btn btn-outline-plum" href="/why-this-matters/" style="align-self:flex-start">Read more about why we're doing this project here →</a>
+    </div>
+    <div style="flex:1;min-width:0;max-width:480px;">
+      <img src="/assets/hero-2.jpg" alt="About North Kerry Environmental Forum" style="width:100%;border-radius:16px;object-fit:cover;">
     </div>
   </div>
-  <div class="step-rule" style="background:var(--plum)"></div>
 </div>

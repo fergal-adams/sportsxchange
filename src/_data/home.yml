@@ -11,10 +11,10 @@ steps:
     description: Find us on WhatsApp and join the community group.
   - num: 2
     title: Post or Browse
-    description: Post items you or your child have outgrown, or browse what others are sharing.
+    description: "Post items you or your child have outgrown, or browse what others are sharing. Include a photo, the size (e.g. age 7-9 football jersey), and condition."
   - num: 3
-    title: Drop or Collect
-    description: Arrange pickup at one of our trusted local pick-up points listed below.
+    title: Pick Up or Collect
+    description: Arrange package pickup at one of our trusted local pick-up points listed below.
 
 who_heading: "WHO IS SPORTS X CHANGE FOR?"
 who_text: "This initiative is for everyone: families with kids who play sports, sports clubs looking to reduce costs, and anyone with good-quality gear they've outgrown. The more people join, the more gear we can keep going — so please spread the word!"
