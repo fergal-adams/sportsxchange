@@ -458,7 +458,7 @@ nav.nav-green .nav-links a { color: var(--peach); }
 /* WHO attribution card */
 .who-card {
   position: absolute;
-  bottom: -30px;
+  bottom: -60px;
   right: -20px;
   width: 340px;
   background: var(--sand);

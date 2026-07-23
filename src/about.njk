@@ -7,16 +7,22 @@ navBg: peach
 permalink: /about/
 ---
 
-<!-- Page hero (light blue) -->
-<div class="page-hero" style="background: var(--light-blue)">
-  <div class="page-hero-inner">
-    <div class="page-hero-display">About<br>Sports<br>X-Change.</div>
-    <div style="flex:1;display:flex;flex-direction:column;gap:20px;padding-bottom:12px;">
-      {% for para in about.story %}
-      <p class="page-hero-sub">{{ para }}</p>
-      {% endfor %}
-      <a class="nav-join-outline" href="{{ site.whatsapp_url }}" target="_blank" rel="noopener" style="align-self:flex-start">Join our WhatsApp Group</a>
+<!-- About hero (bright blue, two-column) -->
+<div class="hiw-hero">
+  <div class="hiw-hero-inner">
+    <div class="hiw-hero-text" style="gap:24px">
+      <div class="hiw-hero-heading">About<br>Sports<br>X-Change.</div>
+      <div style="display:flex;flex-direction:column;gap:16px;">
+        {% for para in about.story %}
+        <p class="hiw-hero-sub">{{ para }}</p>
+        {% endfor %}
+      </div>
+      <a class="btn-whatsapp" href="{{ site.whatsapp_url }}" target="_blank" rel="noopener" style="align-self:flex-start">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg>
+        Join our WhatsApp Group
+      </a>
     </div>
+    <img src="/assets/hero-1.jpg" alt="Sports gear community" class="hiw-hero-img js-scroll-tilt">
   </div>
 </div>
 
@@ -33,8 +39,9 @@ permalink: /about/
       </div>
       <a class="btn btn-outline-plum" href="/why-this-matters/" style="align-self:flex-start">Read more about why we're doing this project here →</a>
     </div>
-    <div style="flex:1;min-width:0;max-width:480px;">
-      <img src="/assets/hero-2.jpg" alt="About North Kerry Environmental Forum" style="width:100%;border-radius:16px;object-fit:cover;">
+    <div style="flex:1;min-width:0;max-width:480px;display:flex;flex-direction:column;gap:20px;">
+      <img src="/assets/hero-2.jpg" alt="North Kerry Environmental Forum community" style="width:100%;border-radius:16px;object-fit:cover;">
+      <img src="/assets/hero-1.jpg" alt="Sports gear swap in action" style="width:100%;border-radius:16px;object-fit:cover;">
     </div>
   </div>
 </div>
