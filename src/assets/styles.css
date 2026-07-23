@@ -22,7 +22,7 @@ html { font-size: 16px; scroll-behavior: smooth; }
 body {
   font-family: 'Inclusive Sans', sans-serif;
   color: var(--plum);
-  background: var(--peach);
+  background: var(--blue);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -708,7 +708,7 @@ footer {
 
 .footer-qr img { width: 100%; height: 100%; object-fit: contain; display: block; }
 
-.footer-wordmark { opacity: 0.2; margin-top: auto; }
+.footer-wordmark { margin-top: auto; }
 .footer-wordmark-img { width: 100%; height: auto; display: block; }
 
 /* ===== PAGE HERO (inner pages) ===== */
