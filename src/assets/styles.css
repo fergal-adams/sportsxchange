@@ -22,7 +22,7 @@ html { font-size: 16px; scroll-behavior: smooth; }
 body {
   font-family: 'Inclusive Sans', sans-serif;
   color: var(--plum);
-  background: var(--blue);
+  background: var(--light-blue);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -75,7 +75,7 @@ nav {
   transition: opacity 0.15s;
 }
 
-.nav-links a.active { font-weight: 700; }
+.nav-links a.active { font-weight: 800; }
 
 nav.nav-green .nav-links a { color: var(--peach); }
 
@@ -641,7 +641,7 @@ nav.nav-green .nav-links a { color: var(--peach); }
 /* ===== FOOTER ===== */
 footer {
   background: var(--blue);
-  padding: 48px 40px 0;
+  padding: 48px clamp(40px, 7vw, 100px) 0;
   display: flex;
   flex-direction: column;
   gap: 48px;
@@ -654,7 +654,7 @@ footer {
   gap: 48px;
 }
 
-.footer-logo-img { height: auto; width: clamp(140px, 18vw, 220px); display: block; flex-shrink: 0; }
+.footer-logo-img { height: 34px; width: auto; display: block; flex-shrink: 0; }
 
 .footer-nav {
   flex: 1;
@@ -714,7 +714,7 @@ footer {
 /* ===== PAGE HERO (inner pages) ===== */
 .page-hero {
   background: var(--blue);
-  padding: 80px var(--pad);
+  padding: 80px clamp(40px, 7vw, 100px) 100px;
 }
 
 .page-hero h1 {
@@ -838,7 +838,7 @@ footer {
 
 /* ===== PAGE HERO (inner pages — rich version) ===== */
 .page-hero {
-  padding: 80px var(--pad) 100px;
+  padding: 80px clamp(40px, 7vw, 100px) 100px;
 }
 
 .page-hero-inner {
