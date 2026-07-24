@@ -22,7 +22,7 @@ html { font-size: 16px; scroll-behavior: smooth; }
 body {
   font-family: 'Inclusive Sans', sans-serif;
   color: var(--plum);
-  background: var(--light-blue);
+  background: var(--blue);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -31,7 +31,7 @@ img { max-width: 100%; display: block; }
 
 /* ===== NAV ===== */
 nav {
-  padding: 24px var(--pad);
+  padding: 24px clamp(40px, 7vw, 100px);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -43,8 +43,6 @@ nav {
   align-items: center;
   flex-wrap: nowrap;
   gap: 12px;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .nav-pill {
@@ -198,7 +196,6 @@ nav.nav-green .nav-links a { color: var(--peach); }
   align-items: center;
   gap: clamp(40px, 7vw, 101px);
   max-width: 1234px;
-  margin: 0 auto;
   width: 100%;
 }
 
@@ -930,7 +927,6 @@ footer {
   align-items: center;
   gap: clamp(40px, 7vw, 100px);
   max-width: 1200px;
-  margin: 0 auto;
 }
 
 .hiw-hero-text {
@@ -1068,7 +1064,6 @@ footer {
 
 .hiw-circle-inner {
   max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   gap: 80px;
@@ -1192,7 +1187,6 @@ details[open] .faq-q::after {
   align-items: center;
   gap: clamp(40px, 7vw, 100px);
   max-width: 1200px;
-  margin: 0 auto;
 }
 
 .wtm-hero-text {
