@@ -575,12 +575,11 @@ nav.nav-green .nav-links a { color: var(--peach); }
 /* ===== SCAN BANNER ===== */
 .scan-banner {
   background: var(--blue);
-  padding: 60px var(--pad);
+  padding: 60px clamp(40px, 7vw, 100px);
 }
 
 .scan-banner-inner {
   max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -732,13 +731,13 @@ footer {
 .section-white  { background: var(--white); }
 
 .section-inner {
-  padding: 64px var(--pad);
+  padding: 64px clamp(40px, 7vw, 100px);
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
-.section-rule { height: 3px; background: var(--plum); margin: 0 var(--pad); }
+.section-rule { height: 3px; background: var(--plum); margin: 0 clamp(40px, 7vw, 100px); }
 
 .t-display {
   font-family: 'Barlow Semi Condensed', sans-serif;
