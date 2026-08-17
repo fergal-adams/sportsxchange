@@ -1,4 +1,4 @@
-hero_intro: "It's simple — join our WhatsApp group, post what you have or find what you need, and arrange collection at a local pick-up point."
+hero_intro: "It's simple — join our WhatsApp group, post what you have or find what you need, and arrange collection at a local Package Pick-Up Point."
 
 steps:
   - num: 1
@@ -18,8 +18,8 @@ collection_points:
   - name: Beale GAA Club
     address: "Ballybunion,\nNorth Kerry"
     logo: "/assets/logo-beale-gaa.png"
-  - name: Ballybunion Community Centre
-    address: "Ballybunion,\nNorth Kerry"
+  - name: Ballybunion Leisure Centre
+    address: "Kit Ahern Road,\nBallybunion"
     logo: "/assets/logo-ballybunion-cc.png"
 
 keep_circle_heading: "Keep the circle going"
@@ -35,7 +35,7 @@ faqs:
   - q: How do I claim an item?
     a: "Reply to the post in the WhatsApp group and arrange collection between yourselves. First to reply secures the item."
   - q: Where do I pick up or collect items?
-    a: "We have pick-up points at SuperValu Ballybunion, Beale GAA Club, and Ballybunion Community Centre. Please use these public locations rather than sharing home addresses."
+    a: "We have Package Pick-Up Points at SuperValu Ballybunion, Beale GAA Club, and Ballybunion Leisure Centre. Please use these public locations rather than sharing home addresses."
   - q: What if the size isn't right?
     a: "No problem — post it back on the group for someone else, or return it to the original poster."
   - q: How long are items available?

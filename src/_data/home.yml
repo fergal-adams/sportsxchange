@@ -11,7 +11,7 @@ steps:
     description: Find us on WhatsApp and join the community group.
   - num: 2
     title: Post or Browse
-    description: "Post items you or your child have outgrown, or browse what others are sharing. Include a photo, the size (e.g. age 7-9 football jersey), and condition."
+    description: "Post items your child has outgrown, or browse what others are sharing. Include a photo, the size (e.g. age 7-9 football jersey), and condition."
   - num: 3
     title: Pick Up or Collect
     description: Arrange package pickup at one of our trusted local pick-up points listed below.
