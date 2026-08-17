@@ -14,6 +14,7 @@
     <div class="nav-pill">
       <a class="nav-logo-link" href="/"><img src="/assets/navbar_logo.svg" alt="Sportswear X-Change" class="nav-logo-img"></a>
       <ul class="nav-links">
+        <li><a href="/" {% if navActive == 'home' %}class="active"{% endif %}>Home</a></li>
         <li><a href="/how-it-works/" {% if navActive == 'how' %}class="active"{% endif %}>How it works</a></li>
         <li><a href="/why-this-matters/" {% if navActive == 'why' %}class="active"{% endif %}>Why this matters</a></li>
         <li><a href="/get-involved/" {% if navActive == 'involved' %}class="active"{% endif %}>Get involved</a></li>
@@ -33,6 +34,7 @@
   <div class="footer-top">
     <a href="/"><img src="/assets/navbar_logo.svg" alt="Sportswear X-Change" class="footer-logo-img"></a>
     <nav class="footer-nav">
+      <a href="/">Home</a>
       <a href="/how-it-works/">How it works</a>
       <a href="/why-this-matters/">Why this matters</a>
       <a href="/get-involved/">Get involved</a>
