@@ -9,7 +9,7 @@ steps:
     description: "Take a photo of the item and post it in the group with a few details — what it is, the size, condition, and where you can pick up or collect. For example: \"Age 7-9 football jersey, excellent condition. Can collect from SuperValu Ballybunion.\""
   - num: 3
     title: Claim and collect
-    description: "See something you or your child needs? Reply to the post and arrange collection between yourselves at a suitable location. First to reply secures the item."
+    description: "See something your child needs? Reply to the post and arrange collection between yourselves at a suitable location. First to reply secures the item."
 
 collection_points:
   - name: SuperValu
