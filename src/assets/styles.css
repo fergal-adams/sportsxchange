@@ -951,20 +951,13 @@ footer {
   color: var(--plum);
 }
 
-.hiw-hero-img-wrap {
+.hiw-hero-img {
   flex: 1;
   min-width: 0;
   max-width: 518px;
   aspect-ratio: 518/397;
-  border-radius: 10px;
-  overflow: hidden;
-}
-.hiw-hero-img {
-  width: 115%;
-  height: 115%;
-  margin: -7.5%;
   object-fit: cover;
-  display: block;
+  border-radius: 10px;
   transform: rotate(0deg);
   transition: transform 0.1s linear;
   will-change: transform;
