@@ -1326,6 +1326,15 @@ details[open] .wtm-accordion-heading::after {
   height: auto;
   margin-top: 16px;
 }
+.wtm-sdg-figure {
+  margin: 16px 0 0;
+}
+.wtm-sdg-caption {
+  font-size: 13px;
+  color: var(--plum);
+  opacity: 0.6;
+  margin-top: 6px;
+}
 .wtm-sdg-disclaimer {
   font-size: 14px;
   line-height: 1.5;
