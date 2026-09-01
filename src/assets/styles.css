@@ -503,6 +503,7 @@ nav.nav-green .nav-links a { color: var(--peach); }
 .dropoff-card {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
 }
 
@@ -526,6 +527,7 @@ nav.nav-green .nav-links a { color: var(--peach); }
   line-height: 28px;
   color: var(--plum);
   white-space: pre-line;
+  text-align: center;
 }
 
 .dropoff-cta {
