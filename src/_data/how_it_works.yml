@@ -12,12 +12,6 @@ steps:
     description: "See something your child needs? Reply to the post and arrange collection between yourselves at a suitable location. First to reply secures the item."
 
 collection_points:
-  - name: SuperValu
-    address: "Ballybunion,\nNorth Kerry"
-    logo: "/assets/logo-supervalu.png"
-  - name: Beale GAA Club
-    address: "Ballybunion,\nNorth Kerry"
-    logo: "/assets/logo-beale-gaa.png"
   - name: Ballybunion Leisure Centre
     address: "Kit Ahern Road,\nBallybunion"
     logo: "/assets/logo-ballybunion-cc.png"
@@ -35,7 +29,7 @@ faqs:
   - q: How do I claim an item?
     a: "Reply to the post in the WhatsApp group and arrange collection between yourselves. First to reply secures the item."
   - q: Where do I pick up or collect items?
-    a: "We have Package Pick-Up Points at SuperValu Ballybunion, Beale GAA Club, and Ballybunion Leisure Centre. Please use these public locations rather than sharing home addresses."
+    a: "We have a Package Pick-Up Point at Ballybunion Leisure Centre, Kit Ahern Road, Ballybunion. Please use this public location rather than sharing home addresses."
   - q: What if the size isn't right?
     a: "No problem — post it back on the group for someone else, or return it to the original poster."
   - q: How long are items available?
@@ -47,4 +41,4 @@ faqs:
   - q: Who manages this?
     a: "SportsXChange is run by North Kerry Environmental Forum with support from the community."
   - q: I have a question that isn't answered here.
-    a: "Get in touch at northkerryenvironmentalforum@gmail.com and we'll help you out."
+    a: "Get in touch at sportsxchangekerry@gmail.com and we'll help you out."
