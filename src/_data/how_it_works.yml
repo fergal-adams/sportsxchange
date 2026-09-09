@@ -15,6 +15,9 @@ collection_points:
   - name: Ballybunion Leisure Centre
     address: "Kit Ahern Road,\nBallybunion"
     logo: "/assets/logo-ballybunion-cc.png"
+  - name: LB Rovers Soccer Academy
+    address: "Lisselton"
+    logo: "/assets/logo-lb-rovers.png"
 
 keep_circle_heading: "Keep the circle going"
 keep_circle_text: "When you pick up an item, use it for as long as you need. When it's outgrown or no longer needed, clean it up and post it back on the group for someone else. That's how we keep good gear going — extending the life of every item and making sure nothing ends up in a cupboard or out of use, when it still has life left in it."
@@ -29,7 +32,7 @@ faqs:
   - q: How do I claim an item?
     a: "Reply to the post in the WhatsApp group and arrange collection between yourselves. First to reply secures the item."
   - q: Where do I pick up or collect items?
-    a: "We have a Package Pick-Up Point at Ballybunion Leisure Centre, Kit Ahern Road, Ballybunion. Please use this public location rather than sharing home addresses."
+    a: "We have Package Pick-Up Points at Ballybunion Leisure Centre (Kit Ahern Road, Ballybunion) and LB Rovers Soccer Academy (Lisselton). Please use these public locations rather than sharing home addresses."
   - q: What if the size isn't right?
     a: "No problem — post it back on the group for someone else, or return it to the original poster."
   - q: How long are items available?
